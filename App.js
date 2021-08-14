@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { useFonts } from 'expo-font'
+import AppLoading from 'expo-app-loading';
+import Navigator from './navigation/Navigator';
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    'poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),
+    'poppins-semi-bold':require('./assets/fonts/Poppins-SemiBold.ttf')
+  })
+
+  if(!fontsLoaded) return <AppLoading/>
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Navigator/>
   );
 }
 
@@ -18,4 +25,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text:{
+    fontFamily:'poppins-semi-bold',
+    fontWeight:'bold'
+  }
 });
