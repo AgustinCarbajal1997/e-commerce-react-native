@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading';
 import Navigator from './navigation/Navigator';
+import { Provider } from 'react-redux';
+import store from './store';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -14,7 +16,10 @@ export default function App() {
   if(!fontsLoaded) return <AppLoading/>
 
   return (
-    <Navigator/>
+    <Provider store={store}>
+      <Navigator/>
+    </Provider>
+
   );
 }
 
