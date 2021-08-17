@@ -7,6 +7,13 @@ import HomeScreen from "../screens/HomeScreen";
 import CartScreen from "../screens/CartScreen";
 import FavScreen from "../screens/FavScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import CellphoneArticles from "../pages/home/cellphoneArticles";
+import FridgeArticles from "../pages/home/fridgeArticles";
+import NotebookArticles from "../pages/home/notebookArticles";
+import SmartwatchArticles from "../pages/home/smartwatchArticles";
+import SplitArticles from "../pages/home/splitArticles";
+import TvArticles from "../pages/home/tvArticles";
+import Details from "../pages/home/Details";
 
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
@@ -22,6 +29,13 @@ const HomeStackScreen = () => {
                     
                 }
             }}/>
+            <HomeStack.Screen name ="cellphone" component={CellphoneArticles}/>
+            <HomeStack.Screen name ="fridge" component={FridgeArticles}/>
+            <HomeStack.Screen name ="notebook" component={NotebookArticles}/>
+            <HomeStack.Screen name ="smartwatch" component={SmartwatchArticles}/>
+            <HomeStack.Screen name ="split" component={SplitArticles}/>
+            <HomeStack.Screen name ="tv" component={TvArticles}/>
+            <HomeStack.Screen name="details" component={Details} />
         </HomeStack.Navigator>
     )
 }

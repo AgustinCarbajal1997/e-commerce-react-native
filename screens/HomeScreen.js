@@ -1,9 +1,9 @@
 import React,{ useEffect } from "react";
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../store/actions/products.action";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
     const dispatch = useDispatch();
     const listProducts = useSelector(state => state.products.products)
     useEffect(() => {
@@ -16,6 +16,12 @@ const HomeScreen = () => {
     return (
         <View>
             <Text style={styles.text}>Home</Text>
+            <TouchableOpacity onPress={()=> navigation.navigate("cellphone")}><Text>Celulares</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("fridge")}><Text>Celulares</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("notebook")}><Text>Celulares</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("smartwatch")}><Text>Celulares</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("split")}><Text>Celulares</Text></TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("tv")}><Text>Celulares</Text></TouchableOpacity>
         </View>
     )
 }
