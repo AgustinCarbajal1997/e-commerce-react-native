@@ -23,7 +23,6 @@ const Item = ({ id, images, title, price, navigation }) => {
             <View style={styles.containerProductaData}>
                 <Text style={styles.containerProductaDataTitle}>{title}</Text>
                 <Text style={styles.containerProductaDataPrice}>$ {price}</Text>
-                <Text style={styles.containerProductaDataPrice}>{id}</Text>
             </View>
         </View>
     </TouchableOpacity>

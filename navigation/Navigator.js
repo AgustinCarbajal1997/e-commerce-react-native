@@ -35,7 +35,7 @@ const HomeStackScreen = () => {
             <HomeStack.Screen name ="smartwatch" component={SmartwatchArticles}/>
             <HomeStack.Screen name ="split" component={SplitArticles}/>
             <HomeStack.Screen name ="tv" component={TvArticles}/>
-            <HomeStack.Screen name="details" component={Details} />
+            <HomeStack.Screen name="details" component={Details} options={{title:"Detalles"}}/>
         </HomeStack.Navigator>
     )
 }
