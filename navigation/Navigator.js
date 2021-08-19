@@ -7,13 +7,9 @@ import HomeScreen from "../screens/HomeScreen";
 import CartScreen from "../screens/CartScreen";
 import FavScreen from "../screens/FavScreen";
 import SettingsScreen from "../screens/SettingsScreen";
-import CellphoneArticles from "../pages/home/cellphoneArticles";
-import FridgeArticles from "../pages/home/fridgeArticles";
-import NotebookArticles from "../pages/home/notebookArticles";
-import SmartwatchArticles from "../pages/home/smartwatchArticles";
-import SplitArticles from "../pages/home/splitArticles";
-import TvArticles from "../pages/home/tvArticles";
+import { STACK_PAGES } from "../pages/home/StackPages";
 import Details from "../pages/home/Details";
+import SearchProducts from "../screens/SearchProducts";
 
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
@@ -29,16 +25,48 @@ const HomeStackScreen = () => {
                     
                 }
             }}/>
-            <HomeStack.Screen name ="cellphone" component={CellphoneArticles}/>
-            <HomeStack.Screen name ="fridge" component={FridgeArticles}/>
-            <HomeStack.Screen name ="notebook" component={NotebookArticles}/>
-            <HomeStack.Screen name ="smartwatch" component={SmartwatchArticles}/>
-            <HomeStack.Screen name ="split" component={SplitArticles}/>
-            <HomeStack.Screen name ="tv" component={TvArticles}/>
-            <HomeStack.Screen name="details" component={Details} options={{title:"Detalles"}}/>
+            { STACK_PAGES.map(item => (
+                <HomeStack.Screen
+                    key={item.id}
+                    name={item.name}
+                    component={item.component}
+                    options={{
+                        title:item.title,
+                        headerTitleStyle:{
+                            fontFamily:'poppins-semi-bold',
+                            
+                        }
+                    }}
+                />
+            )) }
+            
         </HomeStack.Navigator>
     )
 }
+
+
+
+const SearchStack = createStackNavigator();
+const SearchStackScreen = () => {
+    return(
+        <SearchStack.Navigator>
+            <SearchStack.Screen
+                name="Search"
+                component={SearchProducts}
+                options={{
+                    title:"Búsqueda",
+                    headerTitleStyle:{
+                        fontFamily:'poppins-semi-bold',
+                        
+                    }
+                }}
+            />
+            <SearchStack.Screen name="details" component={Details} options={{title:"Detalles"}}/>
+        </SearchStack.Navigator>
+    )
+}
+
+
 
 
 const CartStack = createStackNavigator();
@@ -113,6 +141,8 @@ const Navigator = () => {
                     iconName = focused
                       ? 'home'
                       : 'home';
+                  } else if(route.name === "Búsqueda") {
+                    iconName = focused ? 'search1' : 'search1';
                   } else if (route.name === 'Carrito') {
                     iconName = focused ? 'shoppingcart' : 'shoppingcart';
                   }else if (route.name === 'Favoritos') {
@@ -131,6 +161,7 @@ const Navigator = () => {
             }}
             >
                 <Tab.Screen name="Inicio" component={HomeStackScreen}/>
+                <Tab.Screen name="Búsqueda" component={SearchStackScreen}/>
                 <Tab.Screen name="Carrito" component={CartStackScreen}/>
                 <Tab.Screen name="Favoritos" component={FavStackScreen}/>
                 <Tab.Screen name="Configuracion" component={SettingsStackScreen}/>
