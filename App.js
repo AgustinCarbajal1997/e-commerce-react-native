@@ -1,9 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading';
-import Navigator, { AuthStackScreen } from './navigation/Navigator';
+import MainNavigator from './navigation'
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -17,22 +16,10 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      {/* <Navigator/> */}
-      <AuthStackScreen/>
+      <MainNavigator/>
     </Provider>
 
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text:{
-    fontFamily:'poppins-semi-bold',
-    fontWeight:'bold'
-  }
-});
+

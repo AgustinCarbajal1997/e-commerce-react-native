@@ -130,7 +130,7 @@ const SettingsStackScreen = () => {
 const AuthStack = createStackNavigator();
 export const AuthStackScreen = () => {
     return (
-        <NavigationContainer>
+        // <NavigationContainer>
             <AuthStack.Navigator>
                 <AuthStack.Screen 
                 name="Auth" 
@@ -148,7 +148,7 @@ export const AuthStackScreen = () => {
                 }}
                 />
             </AuthStack.Navigator>
-        </NavigationContainer>
+        // </NavigationContainer>
 
     )
 }
@@ -156,9 +156,9 @@ export const AuthStackScreen = () => {
 
 
 const Tab = createBottomTabNavigator();
-const Navigator = () => {
+export const Navigator = () => {
     return(
-        <NavigationContainer>
+        // <NavigationContainer>
             <Tab.Navigator 
             initialRouteName="Home"
             screenOptions={({ route }) => ({
@@ -194,8 +194,7 @@ const Navigator = () => {
                 <Tab.Screen name="Favoritos" component={FavStackScreen}/>
                 <Tab.Screen name="Configuracion" component={SettingsStackScreen}/>
             </Tab.Navigator>
-        </NavigationContainer>
+        // </NavigationContainer>
     )
 }
 
-export default Navigator;

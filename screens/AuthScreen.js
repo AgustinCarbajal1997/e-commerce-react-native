@@ -2,12 +2,17 @@ import React, { useState, useEffect } from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native'
 import Input from '../components/Input'
 import imageBg from '../assets/backgroud-image-sign-up.jpg'
+import { useDispatch } from 'react-redux'
+import { signup, login } from '../store/actions/auth.action'
+
 const INITIAL_STATE = {
     user:"",
     pass:""
 }
 
 const AuthScreen = () => {
+    const dispatch = useDispatch()
+
     const [input, setInput] = useState(INITIAL_STATE)
     const [isEmailValid, setIsEmailValid] = useState({
         touched:false,
@@ -42,7 +47,27 @@ const AuthScreen = () => {
     }
 
 
+    const onSignUpHandler = () => {
+        console.log("Se ejecuta")
+        if(!isEmailValid || !isPassValid) return;
+        console.log("Se sigue ejecuta")
+        try {
+            dispatch(signup(input.user,input.pass))
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
 
+    const onLogInHandler = () => {
+        console.log("Se ejecuta");
+        if(!isEmailValid || !isPassValid) return;
+        console.log("Se sigue ejecutando");
+        try {
+            dispatch(login(input.user,input.pass))
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
         
         
@@ -89,10 +114,18 @@ const AuthScreen = () => {
                     
                 </View>
                 <View style={styles.buttons}>
-                    <TouchableOpacity style={styles.buttonAuth} activeOpacity={0.8}>
+                    <TouchableOpacity 
+                        style={styles.buttonAuth} 
+                        activeOpacity={0.8}
+                        onPress={onLogInHandler}
+                        >
                         <Text style={styles.buttonText}>Iniciar sesión</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonAuth} activeOpacity={0.8}>
+                    <TouchableOpacity 
+                        style={styles.buttonAuth} 
+                        activeOpacity={0.8}
+                        onPress={onSignUpHandler}
+                        >
                         <Text style={styles.buttonText}>Registrarse</Text>
                     </TouchableOpacity>           
 
