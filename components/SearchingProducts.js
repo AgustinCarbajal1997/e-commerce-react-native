@@ -11,12 +11,10 @@ const SearchingProducts = ({ navigation }) => {
     
 
     useEffect(() => {
-        let filteringProducts;
-        text
-        ? filteringProducts = products.filter(item => item.title.toLowerCase().includes(text.toLocaleLowerCase()))
-        : [] 
-        
+        if(!text) return setFilteredProducts([]); //solucionar barra espaciadora
+        const filteringProducts = products.filter(item => item.title.toLowerCase().includes(text.toLocaleLowerCase())); 
         setFilteredProducts(filteringProducts);
+        
        
         
     }, [text])

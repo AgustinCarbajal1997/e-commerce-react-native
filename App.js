@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading';
-import Navigator from './navigation/Navigator';
+import Navigator, { AuthStackScreen } from './navigation/Navigator';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -17,7 +17,8 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <Navigator/>
+      {/* <Navigator/> */}
+      <AuthStackScreen/>
     </Provider>
 
   );

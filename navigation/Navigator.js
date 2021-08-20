@@ -10,6 +10,7 @@ import SettingsScreen from "../screens/SettingsScreen";
 import { STACK_PAGES } from "../pages/home/StackPages";
 import Details from "../pages/home/Details";
 import SearchProducts from "../screens/SearchProducts";
+import AuthScreen from "../screens/AuthScreen";
 
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
@@ -125,6 +126,33 @@ const SettingsStackScreen = () => {
         </SettingsStack.Navigator>
     )
 }
+
+const AuthStack = createStackNavigator();
+export const AuthStackScreen = () => {
+    return (
+        <NavigationContainer>
+            <AuthStack.Navigator>
+                <AuthStack.Screen 
+                name="Auth" 
+                component={AuthScreen}
+                options={{
+                    title:"Autenticación",
+                    headerStyle:{
+                        backgroundColor:"#3e299c"
+                    },
+                    headerTitleStyle:{
+                        fontFamily:'poppins-semi-bold',
+                        color:"#ffffff"
+                        
+                    }
+                }}
+                />
+            </AuthStack.Navigator>
+        </NavigationContainer>
+
+    )
+}
+
 
 
 const Tab = createBottomTabNavigator();
