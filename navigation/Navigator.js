@@ -1,4 +1,6 @@
 import React from "react";
+import { Button, TouchableOpacity, Text, View } from "react-native";
+import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { AntDesign } from "@expo/vector-icons";
@@ -11,6 +13,7 @@ import { STACK_PAGES } from "../pages/home/StackPages";
 import Details from "../pages/home/Details";
 import SearchProducts from "../screens/SearchProducts";
 import AuthScreen from "../screens/AuthScreen";
+import ButtonsHeaderDetails from "../components/ButtonsHeaderDetails";
 
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
@@ -40,6 +43,20 @@ const HomeStackScreen = () => {
                     }}
                 />
             )) }
+            <HomeStack.Screen 
+                name="details" 
+                component={Details} 
+                options={({ navigation, route }) => ({
+                    title:"Detalles",
+                    headerTitleStyle:{
+                        fontFamily:'poppins-semi-bold',
+                        
+                    },
+                    headerRight: () => (
+                        <ButtonsHeaderDetails route={route}/>
+                    )
+                })}
+            />
             
         </HomeStack.Navigator>
     )
@@ -62,7 +79,20 @@ const SearchStackScreen = () => {
                     }
                 }}
             />
-            <SearchStack.Screen name="details" component={Details} options={{title:"Detalles"}}/>
+            <SearchStack.Screen 
+                name="details" 
+                component={Details} 
+                options={({ navigation, route }) => ({
+                    title:"Detalles",
+                    headerTitleStyle:{
+                        fontFamily:'poppins-semi-bold',
+                        
+                    },
+                    headerRight: () => (
+                        <ButtonsHeaderDetails route={route}/>
+                    )
+                })}
+                />
         </SearchStack.Navigator>
     )
 }
@@ -84,7 +114,20 @@ const CartStackScreen = () => {
                     
                 }
             }}/>
-            
+            <CartStack.Screen 
+                name="details" 
+                component={Details} 
+                options={({ navigation, route }) => ({
+                    title:"Detalles",
+                    headerTitleStyle:{
+                        fontFamily:'poppins-semi-bold',
+                        
+                    },
+                    headerRight: () => (
+                        <ButtonsHeaderDetails route={route}/>
+                    )
+                })}
+            />
         </CartStack.Navigator>
     )
 }
@@ -98,15 +141,30 @@ const FavStackScreen = () => {
             name="Fav" 
             component={FavScreen}
             options={{
-                title:"Mis favoritos",
+                title:"Guardados",
                 headerTitleStyle:{
                     fontFamily:'poppins-semi-bold',
                     
                 }
             }}/>
+            <FavStack.Screen 
+                name="details" 
+                component={Details} 
+                options={({ navigation, route }) => ({
+                    title:"Detalles",
+                    headerTitleStyle:{
+                        fontFamily:'poppins-semi-bold',
+                        
+                    },
+                    headerRight: () => (
+                        <ButtonsHeaderDetails route={route}/>
+                    )
+                })}
+            />
         </FavStack.Navigator>
     )
 }
+                    
 
 const SettingsStack = createStackNavigator();
 const SettingsStackScreen = () => {
@@ -173,7 +231,7 @@ export const Navigator = () => {
                     iconName = focused ? 'search1' : 'search1';
                   } else if (route.name === 'Carrito') {
                     iconName = focused ? 'shoppingcart' : 'shoppingcart';
-                  }else if (route.name === 'Favoritos') {
+                  }else if (route.name === 'Guardados') {
                     iconName = focused ? 'hearto' : 'hearto';
                   }else if (route.name === 'Configuracion') {
                     iconName = focused ? 'setting' : 'setting';
@@ -191,7 +249,7 @@ export const Navigator = () => {
                 <Tab.Screen name="Inicio" component={HomeStackScreen}/>
                 <Tab.Screen name="Búsqueda" component={SearchStackScreen}/>
                 <Tab.Screen name="Carrito" component={CartStackScreen}/>
-                <Tab.Screen name="Favoritos" component={FavStackScreen}/>
+                <Tab.Screen name="Guardados" component={FavStackScreen}/>
                 <Tab.Screen name="Configuracion" component={SettingsStackScreen}/>
             </Tab.Navigator>
         // </NavigationContainer>

@@ -3,7 +3,7 @@
         {
             "id":1,
             "article":"cellphone",
-            "title":"Samsung Galaxy A51 128 GB Negro",
+            "title":"Celular Samsung Galaxy A51 128 GB Negro",
             "images":[
                 "https://images.fravega.com/s500/77cb4cf98ab39fe4e3157c44d2dced2a.jpg",
                 "https://images.fravega.com/s500/c6c0c9460c0133cfc23a6b95aa5a1e95.jpg",
@@ -87,7 +87,7 @@
         {
             "id":2,
             "article":"cellphone",
-            "title":"Samsung Galaxy A32 128 GB Negro",
+            "title":"Celular Samsung Galaxy A32 128 GB Negro",
             "images":[
                 "https://images.fravega.com/s500/a17ab6f3ad0b86f06376c0947efe88f5.jpg",
                 "https://images.fravega.com/s500/690b377eef827293285532fcb357a034.jpg",
@@ -97,7 +97,7 @@
                 "https://images.fravega.com/s500/6f3e7794e939d70afe890c895c75c991.jpg"
             
             ],
-            "price":47.999,
+            "price":47999,
             "unites":"4",
             "description": [
                 {
@@ -171,7 +171,7 @@
         {
             "id":3,
             "article":"cellphone",
-            "title":"LG K42 64 GB Gris",
+            "title":"Celular LG K42 64 GB Gris",
             "images":[
                 "https://images.fravega.com/s500/1d8b40a51dc53b55a5d184502a8c165e.jpg",
                 "https://images.fravega.com/s500/a0ff7412288d9eac0fb11e65e68f2c1d.jpg",
@@ -181,7 +181,7 @@
                 "https://images.fravega.com/s500/3b56d3b30b959e4ce67e076596a6bf76.jpg"
             
             ],
-            "price":24.999,
+            "price":24999,
             "unites":"4",
             "description": [
                 {
@@ -255,7 +255,7 @@
         {
             "id":4,
             "article":"cellphone",
-            "title":"Samsung A01 Core 16 GB Negro",
+            "title":"Celular Samsung A01 Core 16 GB Negro",
             "images":[
                 "https://images.fravega.com/s500/6e762fc3f976bb24b57b32b5a7517c0d.jpg",
                 "https://images.fravega.com/s500/db9c756182d47cf849ebd178fce8c12c.jpg",
@@ -265,7 +265,7 @@
                 "https://images.fravega.com/s500/73a9936f7a6bf5b35ac3170c2307f48b.jpg"
             
             ],
-            "price":15.499,
+            "price":15499,
             "unites":"4",
             "description": [
                 {
@@ -339,7 +339,7 @@
         {
             "id":5,
             "article":"cellphone",
-            "title":"Samsung Galaxy A71 128 GB Negro",
+            "title":"Celular Samsung Galaxy A71 128 GB Negro",
             "images":[
                 "https://images.fravega.com/s500/03f0041a5f41041f67da4976b432341f.jpg",
                 "https://images.fravega.com/s500/0d588cd7d37da2b12ba3582f1c9606b1.jpg",
@@ -347,7 +347,7 @@
                 "https://images.fravega.com/s500/947613cb5ab8a473a725c95721d7de5a.jpg"
             
             ],
-            "price":63.999,
+            "price":63999,
             "unites":"4",
             "description": [
                 {
@@ -421,7 +421,7 @@
         {
             "id":6,
             "article":"cellphone",
-            "title":"LG K22 32 GB Azul",
+            "title":"Celular LG K22 32 GB Azul",
             "images":[
                 "https://images.fravega.com/s500/9211dbdc8014691ec7facd3e45675a28.jpg",
                 "https://images.fravega.com/s500/bd7cf6f593815cb73ec234bf6d3361ba.jpg",
@@ -431,7 +431,7 @@
                 "https://images.fravega.com/s500/d1a608d03019287cbbe84e5369cb32b7.jpg"
             
             ],
-            "price":17.999,
+            "price":17999,
             "unites":"4",
             "description": [
                 {
@@ -505,7 +505,7 @@
         {
             "id":7,
             "article":"cellphone",
-            "title":"Samsung Galaxy S20FE 128 GB Azul",
+            "title":"Celular Samsung Galaxy S20FE 128 GB Azul",
             "images":[
                 "https://images.fravega.com/s500/83a0a11263c7f4db3e7008b315a03f65.jpg",
                 "https://images.fravega.com/s500/d74dfc90acf0618c34d484793a719821.jpg",
@@ -515,7 +515,7 @@
                 "https://images.fravega.com/s500/4f995b611bca200c0c6487b6e3939841.jpg"
             
             ],
-            "price":47.999,
+            "price":47999,
             "unites":"4",
             "description": [
                 {
@@ -589,7 +589,7 @@
         {
             "id":8,
             "article":"cellphone",
-            "title":"Samsung Galaxy S20FE 128 GB Rojo",
+            "title":"Celular Samsung Galaxy S20FE 128 GB Rojo",
             "images":[
                 "https://images.fravega.com/s500/3bba0a5300b388543cced2e973b11d2e.jpg",
                 "https://images.fravega.com/s500/c42523d74e26185cb493c73edae73c19.jpg",
@@ -597,7 +597,7 @@
                 "https://images.fravega.com/s500/f68e3ec9bfa6442ef9015144a77411e5.jpg"
             
             ],
-            "price":77.999,
+            "price":77999,
             "unites":"4",
             "description": [
                 {
@@ -671,7 +671,7 @@
         {
             "id":9,
             "article":"cellphone",
-            "title":"Samsung Galaxy A72 128 GB Negro",
+            "title":"Celular Samsung Galaxy A72 128 GB Negro",
             "images":[
                 "https://images.fravega.com/s500/e5bd6d9d73deaffdbe7f6a006e58d99c.jpg",
                 "https://images.fravega.com/s500/f8944e4b4492f62f9a53c03544fb159b.jpg",
@@ -681,7 +681,7 @@
                 "https://images.fravega.com/s500/db35f7271b9d32fd6f62b172aa802376.jpg"
             
             ],
-            "price":72.999,
+            "price":72999,
             "unites":"4",
             "description": [
                 {
@@ -763,7 +763,7 @@
                 "https://images.fravega.com/s500/2b4c2264405829a04094fac3ea77d8c7.jpg"
             
             ],
-            "price":216.999,
+            "price":216999,
             "unites":"7",
             "description": [
                 {
@@ -820,7 +820,7 @@
                 "https://images.fravega.com/s500/a7ed727152c2d1d3d2844881d84857ff.jpg"
             
             ],
-            "price":149.999,
+            "price":149999,
             "unites":"3",
             "description": [
                 {
@@ -878,7 +878,7 @@
                 "https://images.fravega.com/s500/712eecfcbbec25875fddcd096923f6d6.jpg",
                 "https://images.fravega.com/s500/cfcee153cf876d08d5e370ad63bf2437.jpg"
             ],
-            "price":74.999,
+            "price":74999,
             "unites":"8",
             "description": [
                 {
@@ -935,7 +935,7 @@
                 "https://images.fravega.com/s500/2b4c2264405829a04094fac3ea77d8c7.jpg"
             
             ],
-            "price":99.999,
+            "price":99999,
             "unites":"5",
             "description": [
                 {
@@ -989,7 +989,7 @@
                 "https://images.fravega.com/s500/187acfac828d131ea627d29141d8308a.jpg"
             
             ],
-            "price":47.999,
+            "price":47999,
             "unites":"5",
             "description": [
                 {
@@ -1043,7 +1043,7 @@
                 "https://images.fravega.com/s500/7e6b9c224a52dbe3249b5ba4ed0661b3.jpg"
             
             ],
-            "price":36.499,
+            "price":36499,
             "unites":"5",
             "description": [
                 {
@@ -1096,7 +1096,7 @@
                 "https://images.fravega.com/s500/eb1829d97a24a59fab30f1ad5d368f6f.jpg"
             
             ],
-            "price":53.999,
+            "price":53999,
             "unites":"9",
             "description": [
                 {
@@ -1149,7 +1149,7 @@
                 "https://images.fravega.com/s500/1a34cc5bcc2560ef807b5c69a1fcaea8.jpg"
             
             ],
-            "price":75.999,
+            "price":75999,
             "unites":"2",
             "description": [
                 {
@@ -1201,7 +1201,7 @@
                 "https://images.fravega.com/s500/415f81694ebdfbb605dd512427828367.jpg",
                 "https://images.fravega.com/s500/513de3a6a8c316cbf5b790edb8fced02.jpg"
             ],
-            "price":29.999,
+            "price":29999,
             "unites":"5",
             "description": [
                 {
@@ -1254,7 +1254,7 @@
                 "https://images.fravega.com/s500/53bc464a74d67688828b47a046f76e5b.jpg",
                 "https://images.fravega.com/s500/e6090c22a9ba0bc765734a95d1795780.jpg"
             ],
-            "price":67.999,
+            "price":67999,
             "unites":"5",
             "description": [
                 {
@@ -1307,7 +1307,7 @@
                 "https://images.fravega.com/s500/0571a1f954b500f851249f23cd218e4a.jpg",
                 "https://images.fravega.com/s500/fcce90116c3a7b8d3364b633794c542e.jpg"
             ],
-            "price":44.999,
+            "price":44999,
             "unites":"2",
             "description": [
                 {
@@ -1360,7 +1360,7 @@
                 "https://images.fravega.com/s500/53bc464a74d67688828b47a046f76e5b.jpg",
                 "https://images.fravega.com/s500/e6090c22a9ba0bc765734a95d1795780.jpg"
             ],
-            "price":84.999,
+            "price":84999,
             "unites":"5",
             "description": [
                 {
@@ -1413,7 +1413,7 @@
                 "https://images.fravega.com/s500/fa477199b100f3956fcfd810cfa2f7cb.jpg",
                 "https://images.fravega.com/s500/2e98d121d1375f5ce82669bccc9f0ab1.jpg"
             ],
-            "price":99.999,
+            "price":99999,
             "unites":"3",
             "description": [
                 {
@@ -1466,7 +1466,7 @@
                 "https://images.fravega.com/s500/53bc464a74d67688828b47a046f76e5b.jpg",
                 "https://images.fravega.com/s500/e6090c22a9ba0bc765734a95d1795780.jpg"
             ],
-            "price":75.999,
+            "price":75999,
             "unites":"3",
             "description": [
                 {
@@ -1519,7 +1519,7 @@
                 "https://images.fravega.com/s500/36036096fa62e7dfa3e85ac249a2e421.jpg",
                 "https://images.fravega.com/s500/5a6776fa4e2fef1280712bed91cbb3e3.jpg"
             ],
-            "price":78.999,
+            "price":78999,
             "unites":"5",
             "description": [
                 {
@@ -1572,7 +1572,7 @@
                 "https://images.fravega.com/s500/0c6ccf72ac3a088c091d37a0b315e3cc.jpg",
                 "https://images.fravega.com/s500/0291bc43f0afe7d3623dcbeab6984a2d.jpg"
             ],
-            "price":51.999,
+            "price":51999,
             "unites":"5",
             "description": [
                 {
@@ -1625,7 +1625,7 @@
                 "https://images.fravega.com/s500/b47276d9a028b7ae476a3a1a04fbbad8.jpg",
                 "https://images.fravega.com/s500/4a0eb3e2a3c5bc4528b51a915b7b1f34.jpg"
             ],
-            "price":67.999,
+            "price":67999,
             "unites":"5",
             "description": [
                 {
@@ -1678,7 +1678,7 @@
                 "https://images.fravega.com/s500/98993838ca2166450d31a904f053ce59.jpg",
                 "https://images.fravega.com/s500/975783d3962f8e7aa5b38ad1879b6625.jpg"
             ],
-            "price":51.999,
+            "price":51999,
             "unites":"5",
             "description": [
                 {
@@ -1733,7 +1733,7 @@
                 "https://images.fravega.com/s500/ac0ee0a07336543d1551556111aba7dd.jpg",
                 "https://images.fravega.com/s500/113b9814a925f9efc529389b25b029d6.jpg"
             ],
-            "price":64.999,
+            "price":64999,
             "unites":"5",
             "description": [
                 {
@@ -1798,7 +1798,7 @@
                 "https://images.fravega.com/s500/93b22265463bc4ffb0aa568a4a45474d.jpg",
                 "https://images.fravega.com/s500/d1b490050abfa85ed0fc2d9f82313b8a.jpg"
             ],
-            "price":74.999,
+            "price":74999,
             "unites":"5",
             "description": [
                 {
@@ -1862,7 +1862,7 @@
                 "https://images.fravega.com/s500/4f1f021e091aeeb2ddd8da1e7eef9e5b.jpg",
                 "https://images.fravega.com/s500/0fb4332b0fe5018434c6ddd2b2949b0a.jpg"
             ],
-            "price":89.999,
+            "price":89999,
             "unites":"5",
             "description": [
                 {
@@ -1925,7 +1925,7 @@
                 "https://images.fravega.com/s500/f8b60e87ed3e2a715d54c62cd859e2ca.jpg",
                 "https://images.fravega.com/s500/0ecf28ded3f93d8d4fb54faacd35184f.jpg"
             ],
-            "price":54.999,
+            "price":54999,
             "unites":"5",
             "description": [
                 {
@@ -1986,7 +1986,7 @@
             "images":[
                 "https://images.fravega.com/s500/69981791cbe4cf4e6b44b2caba3c6607.jpg"
             ],
-            "price":109.999,
+            "price":109999,
             "unites":"5",
             "description": [
                 {
@@ -2050,7 +2050,7 @@
                 "https://images.fravega.com/s500/7456075bfc76d2ef18f606042640e2f4.jpg",
                 "https://images.fravega.com/s500/3b90826ea0d1cc8666dc45db1cb8797e.jpg"
             ],
-            "price":79.999,
+            "price":79999,
             "unites":"5",
             "description": [
                 {
@@ -2112,7 +2112,7 @@
                 "https://images.fravega.com/s500/be81550ee0ef296c36311d8cf1c4cfbd.jpg",
                 "https://images.fravega.com/s500/ea73b242c5e3fea4209cfc86eb198f70.jpg"
             ],
-            "price":139.599,
+            "price":139599,
             "unites":"5",
             "description": [
                 {
@@ -2176,7 +2176,7 @@
                 "https://images.fravega.com/s500/70be3f20e9de64db9f47327d32e459f6.jpg",
                 "https://images.fravega.com/s500/1e53061eeec974e520770f9ad7b6275f.jpg"
             ],
-            "price":89.999,
+            "price":89999,
             "unites":"5",
             "description": [
                 {
@@ -2240,7 +2240,7 @@
                 "https://images.fravega.com/s500/690e7371df4c7027d3ff63b24f249df8.jpg",
                 "https://images.fravega.com/s500/7e2943b30f5a6d1af618412a7573f207.jpg"
             ],
-            "price":89.999,
+            "price":89999,
             "unites":"5",
             "description": [
                 {
@@ -2304,7 +2304,7 @@
                 "https://images.fravega.com/s500/c8606d0af9228fe927ec400ca6567a56.jpg",
                 "https://images.fravega.com/s500/6c20ccef0558c5120fbcdb2f54a1969a.jpg"
             ],
-            "price":6.440,
+            "price":6440,
             "unites":"5",
             "description": [
                 {
@@ -2368,7 +2368,7 @@
                 "https://images.fravega.com/s500/0a0faec36a8e0c2fa40540124caf1e86.jpg",
                 "https://images.fravega.com/s500/4dff1411475f55c7b227480c2908b025.jpg"
             ],
-            "price":3.699,
+            "price":3699,
             "unites":"5",
             "description": [
                 {
@@ -2432,7 +2432,7 @@
                 "https://images.fravega.com/s500/0a0faec36a8e0c2fa40540124caf1e86.jpg",
                 "https://images.fravega.com/s500/4dff1411475f55c7b227480c2908b025.jpg"
             ],
-            "price":3.699,
+            "price":3699,
             "unites":"5",
             "description": [
                 {
@@ -2496,7 +2496,7 @@
                 "https://images.fravega.com/s500/ea0f547112ea697531e41cd7dc1665c3.jpg",
                 "https://images.fravega.com/s500/2b2e798d3ae736307fe46e13af52c31a.jpg"
             ],
-            "price":3.699,
+            "price":3699,
             "unites":"5",
             "description": [
                 {
@@ -2558,7 +2558,7 @@
                 "https://images.fravega.com/s500/9bcfb9d23d4980c24caedc4b5ef5edcd.jpg",
                 "https://images.fravega.com/s500/fa6634602ec096fb31307bf3aac95fa1.jpg"
             ],
-            "price":14.999,
+            "price":14999,
             "unites":"5",
             "description": [
                 {
@@ -2622,7 +2622,7 @@
                 "https://images.fravega.com/s500/da224d478964fd4fe7c98a7a0fa06f02.jpg",
                 "https://images.fravega.com/s500/de893cf792ef777ee3c1a29d98b3e4c1.jpg"
             ],
-            "price":6.440,
+            "price":6440,
             "unites":"5",
             "description": [
                 {
@@ -2686,7 +2686,7 @@
                 "https://images.fravega.com/s500/134853fea9360f8ee0ab5d4b3d6129ac.jpg",
                 "https://images.fravega.com/s500/afe08afc1541ad664ff2b5635320b291.jpg"
             ],
-            "price":54.999,
+            "price":54999,
             "unites":"5",
             "description": [
                 {
@@ -2747,7 +2747,7 @@
             "images":[
                 "https://images.fravega.com/s500/859c4ed411dc9ed87c25edb2b5bbe8d5.jpg"
             ],
-            "price":7.999,
+            "price":7999,
             "unites":"5",
             "description": [
                 {
@@ -2811,7 +2811,7 @@
                 "https://images.fravega.com/s500/2137d221c7722af6921f602fc33eaa1e.jpg",
                 "https://images.fravega.com/s500/dc6275b9d8153ef1d4a8bd2dac6225f2.jpg"
             ],
-            "price":4.949,
+            "price":4949,
             "unites":"5",
             "description": [
                 {
@@ -2876,7 +2876,7 @@
                 "https://images.fravega.com/s500/878ddf3b0e648464c9291133569f88ed.jpg",
                 "https://images.fravega.com/s500/5fee61eaa6de7e05010ba6254c49a41b.jpg"
             ],
-            "price":51.999,
+            "price":51999,
             "unites":"5",
             "description": [
                 {
@@ -2940,7 +2940,7 @@
                 "https://images.fravega.com/s500/b30c2bd6fd9a97d462b3d520f9a7dbde.jpg",
                 "https://images.fravega.com/s500/82c826fea4c3034e9e28d13def569a6f.jpg"
             ],
-            "price":52.199,
+            "price":52199,
             "unites":"5",
             "description": [
                 {
@@ -3005,7 +3005,7 @@
                 "https://images.fravega.com/s500/10bb90b4ca3e935ec1d3f467f1ac527b.jpg",
                 "https://images.fravega.com/s500/48c0a0ba5f0b74769e365d37041025bf.jpg"
             ],
-            "price":76.999,
+            "price":76999,
             "unites":"5",
             "description": [
                 {
@@ -3070,7 +3070,7 @@
                 "https://images.fravega.com/s500/4b8dd4f7c836b7a855abd3915703681b.jpg",
                 "https://images.fravega.com/s500/ae3120de41f9890b44ee627447a775ce.jpg"
             ],
-            "price":72.999,
+            "price":72999,
             "unites":"5",
             "description": [
                 {
@@ -3135,7 +3135,7 @@
                 "https://images.fravega.com/s500/878ddf3b0e648464c9291133569f88ed.jpg",
                 "https://images.fravega.com/s500/5fee61eaa6de7e05010ba6254c49a41b.jpg"
             ],
-            "price":64.999,
+            "price":64999,
             "unites":"5",
             "description": [
                 {
@@ -3203,7 +3203,7 @@
                 "https://images.fravega.com/s500/b41893b046ff5796bf55268c248d33ef.jpg",
                 "https://images.fravega.com/s500/ef853d2ffe2e4646c5115a4d4fa968d3.jpg"
             ],
-            "price":192.899,
+            "price":192899,
             "unites":"5",
             "description": [
                 {
@@ -3271,7 +3271,7 @@
                 "https://images.fravega.com/s500/9626c80129bb61d30fa89a8c209a45f1.jpg",
                 "https://images.fravega.com/s500/3fe246fb2f74e9ab43177a400c402b62.jpg"
             ],
-            "price":145.999,
+            "price":145999,
             "unites":"5",
             "description": [
                 {
@@ -3334,7 +3334,7 @@
                 "https://images.fravega.com/s500/fbce41f8f67e605c17de1d86692ae850.jpg",
                 "https://images.fravega.com/s500/d7dfa624e60d9e1efbf921f6594a759e.jpg"
             ],
-            "price":79.999,
+            "price":79999,
             "unites":"5",
             "description": [
                 {
@@ -3398,7 +3398,7 @@
                 "https://images.fravega.com/s500/332d716c188b05bdb15e79dc2df02549.jpg",
                 "https://images.fravega.com/s500/765edeff393ac9682bc93ab9a5753e6f.jpg"
             ],
-            "price":97.999,
+            "price":97999,
             "unites":"5",
             "description": [
                 {
@@ -3453,7 +3453,480 @@
             ]
         }
         
-    ]
+    ],
+    "sales":[
+        {
+            "id":55,
+            "article":"cellphone",
+            "title":"Celular Xiaomi Redmi Note 10 5G US 128G Graphite Gray",
+            "images":[
+                "https://images.fravega.com/s500/73f919cdccf947ab5ad2c776011b7cb3.jpg",
+                "https://images.fravega.com/s500/8be02712943254b2acebc69e8df04a1f.jpg",
+                "https://images.fravega.com/s500/29cc1e4983e56475271560b6c55bc786.jpg",
+                "https://images.fravega.com/s500/dc50df6a20a4d1dfa62b52cb36bf8bc4.jpg",
+                "https://images.fravega.com/s500/6f1a11e8cd26865859df5a9adeadb33d.jpg",
+                "https://images.fravega.com/s500/13ab2e80f7ba23c9ca9358fe700a0445.jpg"
+            
+            ],
+            "price":42999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Guardá lo que quieras",
+                    "paragraph":"Posee una memoria interna de 128 GB y la posibilidad de expandirla, con una tarjeta microSD, hasta 512 GB. Vas a poder descargar aplicaciones, almacenar videos, fotos y música sin problemas."
+                },
+                {
+                    "title":"Capturá tus momentos",
+                    "paragraph":"Cámara triple de 48 MP. Captura tu entorno con facilidad. Con una cámara principal de 48 MP, una cámara macro que captura los detalles y un sensor de profundidad con el que puedes inmortalizar retratos cautivadores, tus fotos serán impresionantes y con la mejor calidad, independientemente de lo que fotografíes."
+                },
+                {
+                    "title":"Viví conectado",
+                    "paragraph":"Ultra Rápido. La conectividad 5G no es rápida, es ultrarrápida. Al conectarse a una red 5G, Redmi Note 10 5G te permite disfrutar de juegos fluidos en tiempo real y video llamadas sin interrupciones, ofreciendo una experiencia de uso mucho más envolvente y fluida para ver series, películas o jugar sin que se trabe y sin pausas. Es compatible con la avanzada tecnología de dual SIM o doble SIM (5G+5G). Excelente rendimiento. Redmi Note 10 5G es tres veces más rápido que sus competidores. "
+                },
+                {
+                    "title":"No te quedes sin batería",
+                    "paragraph":"La batería de 5000 mAh tiene suficiente potencia para hacer lo que quieras. Gracias a una capacidad al nivel de una batería externa, podrás disfrutar del entretenimiento audiovisual durante horas. Con un uso normal, la batería puede aguantar fácilmente durante todo el día, por lo que no tendrás que preocuparte por su recarga."
+                },
+                {
+                    "title":"Disfrutá de un gran rendimiento",
+                    "paragraph":"Está equipado con un CPU (procesador) de 8 núcleos cuya velocidad de procesamiento es de hasta 2,2 GHz, además de un potente GPU (procesador gráfico) ARM Mali G57, lo que garantiza un funcionamiento fluido del equipo y proporciona una experiencia de usuario impecable y extraordinaria. Poderoso. Vas a estar siempre un paso adelante al cargar juegos, al ver películas y demás, gracias a UFS 2.2. "
+                },
+                {
+                    "title":"Diseño",
+                    "paragraph":"Pantalla FHD+ AdaptiveSync de 6,5''. Esta pantalla tiene más cantidad de pixeles que una Pantalla full HD, esto se traduce en imágenes con mayor definición. Además, la frecuencia de actualización de 90 Hz permite que la pantalla muestre 90 fotogramas por segundo, lo que supone un 50 % más de fotogramas que los Smartphones normales con pantallas de 60 Hz, generando un mejor detalle de gráficos en juegos y videos, que disfrutarás como nunca. Seguro. Protección de la vista en todo momento."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Cámara",
+                    "especifications1":"Cámara principal",
+                    "especifications2":"48.0 MP + 12.0 MP + 5.0 MP + 5.0 MP (apertura múltiple: F2.0 , F2.2 , F2.4 , F2.2)"
+                },
+                {
+                    "title":"Memoria",
+                    "especifications1":"Memoria interna (ROM)",
+                    "especifications2":"128 GB"
+                },
+                {
+                    "title":"Imagen",
+                    "especifications1":"Tamaño Pantalla",
+                    "especifications2":"6.5"
+                },
+                {
+                    "title":"Red",
+                    "especifications1":"5G-LTE",
+                    "especifications2":"Dual Chip"
+                },
+                {
+                    "title":"Conectividad",
+                    "especifications1":"Bluetooth",
+                    "especifications2":"USB C"
+                },
+                {
+                    "title":"Características generales ",
+                    "especifications1":"Sistema operativo",
+                    "especifications2":"Android"
+                },
+                {
+                    "title":"Bateria",
+                    "especifications1":"Bateria",
+                    "especifications2":"4000 mAh"
+                },
+                {
+                    "title":"Dimensiones",
+                    "especifications1":"Dimensiones",
+                    "especifications2":"158,5 x 73,6 x 7,9 mm"
+                }
+            ]
+        },
+        {
+            "id":56,
+            "article":"notebook",
+            "title":"Notebook HP 14' 4GB 64GB Celeron N420 14-AX112LA",
+            "images":[
+                "https://images.fravega.com/s500/3f5f1bcc01fc9a620bbb1a9f754a3326.jpg",
+                "https://images.fravega.com/s500/dd0d02876e08198a914ef91308f7be8f.jpg",
+                "https://images.fravega.com/s500/cbbd24ffe5815e40e0a6d37f47001443.jpg"
+            
+            ],
+            "price":49999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Pantalla",
+                    "paragraph":"Posee una pantalla HD de 14 pulgadas, con una resolución de 1366x768 que te permitirá disfrutar de una gran calidad de colores e imagen. Ideal para ver maratones de series y películas.  "
+                },
+                {
+                    "title":"Desempeño",
+                    "paragraph":"Su procesador Intel Celeron N4020 y su memoria de 4GB se complementan para ofrecer un mayor rendimiento con un bajo consumo de energía. Además, su disco eMMC de 64GB le da una gran capacidad de almacenamiento de datos y te permite guardar una mayor cantidad de contenido multimedia."
+                },
+                {
+                    "title":"Diseño",
+                    "paragraph":"La notebook HP 14-AX112LA cuenta con un diseño compacto y funcional. Sus prácticas medidas de: 33,71 cm de ancho x 22,61 cm de profundidad x 1,78 cm de alto y su liviano peso de tan sólo: 1,44 Kg permiten que puedas llevarla con vos a donde vayas."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Procesador",
+                    "especifications1":"Procesador",
+                    "especifications2":"Intel Celeron N4020"
+                },
+                {
+                    "title":"Memoria",
+                    "especifications1":"Disco rígido",
+                    "especifications2":"64GB"
+                },
+                {
+                    "title":"Imagen",
+                    "especifications1":"Tamaño Pantalla",
+                    "especifications2":"14.1 pulgadas"
+                },
+                {
+                    "title":"Conectividad",
+                    "especifications1":"USB-WIFI",
+                    "especifications2":"USB 3.1 Gen 1; 1 USB 2.0"
+                },
+                {
+                    "title":"Características generales ",
+                    "especifications1":"Sistema operativo",
+                    "especifications2":"Windows 10"
+                },
+                {
+                    "title":"Bateria",
+                    "especifications1":"Bateria",
+                    "especifications2":"3 Celdas"
+                },
+                {
+                    "title":"Dimensiones",
+                    "especifications1":"Medidas",
+                    "especifications2":"33,71 cm de ancho x 22,61 cm de profundidad x 1,78 cm de alto"
+                }
+            ]
+        },
+        {
+            "id":57,
+            "article":"playstation",
+            "title":"Sony PlayStation 5 PS5",
+            "images":[
+                "https://images.fravega.com/s500/e24171063a6f9d21eb89c7d9eae6bc5a.jpg",
+                "https://images.fravega.com/s500/80b998b247b2c26d8bc31d03f9343027.jpg",
+                "https://images.fravega.com/s500/150e4bccf2289276584ed80c008eded0.jpg"
+            
+            ],
+            "price":159999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Rendimiento",
+                    "paragraph":"Experimentá una carga increíblemente rápida con un disco de estado sólido SSD de ultra alta velocidad, inmersión más profunda con soporte para retroalimentación háptica, disparadores adaptativos y audio 3D, y una nueva generación de increíbles juegos de PlayStation. Su CPU x86-64-AMD Ryzen Zen 2 de 8 nucleos junto a su GPU basado en AMD Radeon RDNA 2 permiten correr una increíble nueva generación de juegos con las máximas exigencias. Además, cuenta con una memoria GDDR6 16GB y 825GB de capacidad de almacenaje. Esta versión incluye lectora de formato de disco de videojuego PS5 Ultra HD Blu-Ray."
+                },
+                {
+                    "title":"DualSense",
+                    "paragraph":"La consola PS5 cuenta con nuevos accesorios para que juegues de la mejor y más divertida manera posible. Su control inalámbrico DualSense permite una experiencia de juego más intensa e inmersiva. El innovador control de PS5 cuenta con respuesta háptica y efectos de gatillo dinámicos. Además, incluye un micrófono integrado y el nuevo botón crear, todo en un diseño cómodo e icónico."
+                },
+                {
+                    "title":"Diseño",
+                    "paragraph":"La nueva PlayStation 5 presenta un innovador diseño con un predominio del color blanco y nuevos detalles que la hacen única. Toda su estructura está diseñada para favorecer la potencia interna con la que cuenta. Se trata de un cambio radical tanto en estética como en capacidad respecto del modelo anterior PS4. Esta versión incluye la lectora de discos Blu-Ray."
+                },
+                {
+                    "title": "Accesorios",
+                    "paragraph":"La PS5 ofrece accesorios increíbles (no incluidos) como la estación de recarga para DualSense que carga hasta dos controles inalámbricos simultáneamente. Auriculares inalámbricos Pulse 3D ajustados para audio 3D en consolas PS5. Control multimedia para controlar cómodamente las películas, los servicios de transmisión y mucho más en tu consola. Y la Cámara HD para ser parte de tus videos y transmisiones de juego con captura suave, nítida y Full-HD."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Detalles",
+                    "especifications1":"Salidas",
+                    "especifications2":"HDMI"
+                },
+                {
+                    "title":"Memoria",
+                    "especifications1":"Capacidad",
+                    "especifications2":"825 GB"
+                },
+                {
+                    "title":"joystick",
+                    "especifications1":"Cantindad",
+                    "especifications2":"1"
+                },
+                {
+                    "title":"Resolución",
+                    "especifications1":"Resolución",
+                    "especifications2":"Soporte TVs 4K 120H, Tvs 8Kç, VRR (Específicamente para HDMI versión 2.1)"
+                },
+                {
+                    "title":"Compatibiliad",
+                    "especifications1":"Formatos",
+                    "especifications2":"Ultra HD Blu-Ray, hasta 100GB/disco"
+                }
+            ]
+        },
+        {
+            "id":58,
+            "article":"tv",
+            "title":"Smart TV Full HD Samsung 43' UN43T5300A",
+            "images":[
+                "https://images.fravega.com/s500/0ec3af99701dbf0665ec61ea3816b028.jpg",
+                "https://images.fravega.com/s500/ccb91dc752d1f42e2f3d0c78ad2adb53.jpg"
+            
+            ],
+            "price":49999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Conectá tus dispositivos",
+                    "paragraph":"Mediante sus entradas HDMI podés conectar reproductores de audio y video; consolas de juegos y notebooks. Su gran capacidad de transmisión de datos permite disfrutar de imágenes en alta definición y un sonido de gran fidelidad. También, a través de su puerto USB podrás reproducir contenido digital (música, imágenes y videos) almacenado en dispositivos externos como tablets, smartphones y pendrives."
+                },
+                {
+                    "title":"Navegá por la web",
+                    "paragraph":"Gracias a que posee Wi-Fi incorporado, podrás acceder a internet de forma inalámbrica, navegar y ejecutar tus aplicaciones favoritas."
+                },
+                {
+                    "title":"Disfrutá en Full HD",
+                    "paragraph":"El Smart TV Samsung UN43T5300A cuenta con una pantalla de visualización widescreen (16:9) con resolución Full HD (1920 x 1080 píxeles) que brinda una gran calidad de imagen y contraste. A diferencia de otras TV convencionales, su tecnología en color mejora la calidad de las imágenes mediante un algoritmo avanzado devolviendo colores más reales."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Imagen",
+                    "especifications1":"Tamaño de Pantalla",
+                    "especifications2":"43 pulgadas"
+                },
+                {
+                    "title":"Características Generales",
+                    "especifications1":"Smart TV",
+                    "especifications2":"Sí"
+                },
+                {
+                    "title":"Conectividad",
+                    "especifications1":"HDMI",
+                    "especifications2":"2"
+                },
+                {
+                    "title":"Resolución",
+                    "especifications1":"Resolución",
+                    "especifications2":"Soporte TVs 4K 120H, Tvs 8Kç, VRR (Específicamente para HDMI versión 2.1)"
+                },
+                {
+                    "title":"Que Incluye?",
+                    "especifications1":"Control Remoto",
+                    "especifications2":"Sí"
+                }
+            ]
+        },
+        {
+            "id":59,
+            "article":"notebook",
+            "title":"Notebook Lenovo 14' AMD 3020 4GB 500GB 145-81UV00AM",
+            "images":[
+                "https://images.fravega.com/s500/e5d2a7fc52c88379da1971cb75edef7d.jpg",
+                "https://images.fravega.com/s500/71d095d122545188d7a84966891d047b.jpg",
+                "https://images.fravega.com/s500/f62b00786c2a8a1548d1fbc6e5dd1de7.jpg",
+                "https://images.fravega.com/s500/74674151f712d594982e69aff79f929a.jpg"
+            
+            ],
+            "price":59999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Diseño",
+                    "paragraph":"La notebook Lenovo S145-81UV00AM cuenta con un diseño compacto y moderno. Su liviano peso de 1,6 Kg y sus medidas: 32,7 cm de ancho x 24,1 cm de profundidad x 1,9 cm de alto la vuelven sumamente transportable y funcional. "
+                },
+                {
+                    "title":"Desempeño",
+                    "paragraph":"Su procesador AMD 3020 junto con su memoria RAM de 4GB se complementan y ofrecen el máximo rendimiento con mejor consumo de energía. A su vez que permite ejecutar cualquier tarea con facilidad. También, guarda tu contenido multimedia y programas favorito en el disco HDD de 500GB."
+                },
+                {
+                    "title":"Disfrutá en Full HD",
+                    "paragraph":"Podrás disfrutar de películas, videos y juegos o de navegar en internet con una gran definición en tu pantalla de 14 pulgadas Full HD con una resolución de 1366x768."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Procesador",
+                    "especifications1":"Procesador",
+                    "especifications2":"AMD 3020"
+                },
+                {
+                    "title":"Memoria",
+                    "especifications1":"Disco rígido",
+                    "especifications2":"500 GB"
+                },
+                {
+                    "title":"Sistema Operativo",
+                    "especifications1":"Sistema Operativo",
+                    "especifications2":"Windows 10"
+                },
+                {
+                    "title":"Imagen",
+                    "especifications1":"Resolución",
+                    "especifications2":"1366 x 768"
+                },
+                {
+                    "title":"Conectividad",
+                    "especifications1":"USB",
+                    "especifications2":"2 USB 3.1/1 USB 2.0"
+                }
+            ]
+        },
+        {
+            "id":60,
+            "article":"tv",
+            "title":"Smart TV 4K UHD Samsung 65' UN65TU7000G",
+            "images":[
+                "https://images.fravega.com/s500/5c68fe2b2b02f23be9afb6bf5e0a84a6.jpg",
+                "https://images.fravega.com/s500/59f549a1fbfdc7fbd655deffa125ef54.jpg",
+                "https://images.fravega.com/s500/255c4c170f90f137747933b44c8727cf.jpg"
+            
+            ],
+            "price":129999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Conecta tus dispositivos",
+                    "paragraph":"Mediante sus entradas HDMI podés conectar reproductores de audio y video; consolas de juegos y notebooks. Su gran capacidad de transmisión de datos permite disfrutar de imágenes en alta definición y un sonido de gran fidelidad. También, a través de su puerto USB podrás reproducir contenido digital (música, imágenes y videos) almacenado en dispositivos externos como tablets, smartphones y pendrives."
+                },
+                {
+                    "title":"Disfrutá 4K UHD",
+                    "paragraph":"El Smart TV Samsung UN65TU7000G tiene una resolución cuatro veces superior a la de una TV Full HD (3840 x 2160 píxeles) y cuenta con una pantalla Crystal Display 4K con imágenes con una gama de colores más amplia. La pantalla Crystal Display garantiza una expresión de colores optimizada para que puedas ver cada detalle. Su panel LED ofrece además la característica de alto rango dinámico (HDR), que aumenta la expresión brillante del televisor para que puedas disfrutar de un inmenso espectro de colores y detalles visuales, incluso en las escenas más oscuras."
+                },
+                {
+                    "title":"Navegá por la Web",
+                    "paragraph":"Gracias a que posee Wi-Fi incorporado, podrás acceder a internet de forma inalámbrica, navegar y ejecutar tus aplicaciones favoritas."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Resolución",
+                    "especifications1":"Resolución",
+                    "especifications2":"Full HD"
+                },
+                {
+                    "title":"Que Incluye?",
+                    "especifications1":"Control remoto",
+                    "especifications2":"Sí"
+                },
+                {
+                    "title":"Sistema Operativo",
+                    "especifications1":"Sistema Operativo",
+                    "especifications2":"Android"
+                },
+                {
+                    "title":"Imagen",
+                    "especifications1":"Tamaño",
+                    "especifications2":"65 pulgadas"
+                },
+                {
+                    "title":"Conectividad",
+                    "especifications1":"Entradas HDMI",
+                    "especifications2":"2 USB 3.1/1 USB 2.0"
+                }
+            ]
+        },
+        {
+            "id":61,
+            "article":"tv",
+            "title":"Smart TV 32' HD Samsung UN32J4290AGCFV",
+            "images":[
+                "https://images.fravega.com/s500/b02f3e46c89fe14a5c4689ba6ac9bc08.jpg",
+                "https://images.fravega.com/s500/c468cf25b4bdce1a1d6e6ebee9b2a525.jpg"
+            
+            ],
+            "price":34999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Conecta tus dispositivos",
+                    "paragraph":"Mediante sus entradas HDMI podés vincular reproductores de audio y video; consolas de juegos y notebooks. Su gran capacidad de transmisión de datos permite disfrutar de imágenes en alta definición y un sonido de gran fidelidad."
+                },
+                {
+                    "title":"Disfrutá HD",
+                    "paragraph":"El Smart TV Samsung 32” UN32J4290AGCFV cuenta con una pantalla de visualización widescreen (16:9) con resolución HD (1366 x 768 píxeles) que brinda una gran calidad de imagen y contraste."
+                },
+                {
+                    "title":"Navegá por la Web",
+                    "paragraph":"Gracias a posee Wi- Fi incorporado vas a poder acceder a internet de forma inalámbrica o bien, a través de cable de red mediante su puerto LAN. Navegá por la web y disfrutá de aplicaciones como Netflix, Facebook y Twitter, entre otras."
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Resolución",
+                    "especifications1":"Resolución",
+                    "especifications2":"HD"
+                },
+                {
+                    "title":"Que Incluye?",
+                    "especifications1":"Control remoto",
+                    "especifications2":"Sí"
+                },
+                {
+                    "title":"Sistema Operativo",
+                    "especifications1":"Sistema Operativo",
+                    "especifications2":"Android"
+                },
+                {
+                    "title":"Imagen",
+                    "especifications1":"Tamaño",
+                    "especifications2":"32 pulgadas"
+                },
+                {
+                    "title":"Conectividad",
+                    "especifications1":"Entradas HDMI",
+                    "especifications2":"2 USB 3.1/1 USB 2.0"
+                }
+            ]
+        },
+        {
+            "id":62,
+            "article":"fridge",
+            "title":"Heladera No Frost Electrolux DFN3500B 303 LT",
+            "images":[
+                "https://images.fravega.com/s500/502d190640b5ee87d35efb48ecbe0bd9.png",
+                "https://images.fravega.com/s500/4dc3aa0181eb122d6f40f6b13f6522e3.png",
+                "https://images.fravega.com/s500/d7dfa624e60d9e1efbf921f6594a759e.jpg"
+            
+            ],
+            "price":78999,
+            "unites":"4",
+            "description": [
+                {
+                    "title":"Diseño",
+                    "paragraph":"La heladera Electrolux DFN3500B tiene un diseño clásico de tipo Top Mount, es decir que ubica el freezer en la parte superior y en la parte inferior el refrigerador. Además, en su interior, sus balcones deslizantes flexibles permiten optimizar el espacio de la contrapuerta para guardar desde botellas hasta tuppers. Por otro lado, sus estantes removibles de vidrio templado son ideales para organizar a gusto los alimentos y bebidas."
+                },
+                {
+                    "title":"Capacidad",
+                    "paragraph":"Su capacidad de almacenamiento total es de 298 litros, capacidad útil del Freezer 73 LTS, y capacidad útil del refrigerador 225 LTS. Mientras que sus medidas son: 60.9 cm de ancho, 166.8 cm de alto y 68.2 cm de profundidad. "
+                }
+            ],
+            "especifications":[
+                {
+                    "title":"Refrigerador",
+                    "especifications1":"Estantes regulables",
+                    "especifications2":"Sí"
+                },
+                {
+                    "title":"Capacidad",
+                    "especifications1":"Capacidad bruta",
+                    "especifications2":"303lt"
+                },
+                {
+                    "title":"Características generales",
+                    "especifications1":"Luz interior",
+                    "especifications2":"Sí"
+                },
+                {
+                    "title":"Consumo",
+                    "especifications1":"Eficiencia energética",
+                    "especifications2":"A"
+                },
+                {
+                    "title":"Modelo y origen",
+                    "especifications1":"Origen",
+                    "especifications2":"Argentina"
+                }
+            ]
+        }
 
+    ]
    
 }

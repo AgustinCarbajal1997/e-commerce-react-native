@@ -43,10 +43,5 @@ export const STACK_PAGES = [
         component: TvArticles,
         title:"Televisores"
     },
-    {
-        id:7,
-        name:"details",
-        component: Details,
-        title:"Detalles"
-    }
+    
 ]
