@@ -11,7 +11,8 @@ import { persistReducer, persistStore } from "redux-persist"
 const persistConfig = {
     key:'root',
     storage: AsyncStorage,
-    stateReconciler: autoMergeLevel2
+    stateReconciler: autoMergeLevel2,
+    
 }
 
 const RootReducer = combineReducers({
