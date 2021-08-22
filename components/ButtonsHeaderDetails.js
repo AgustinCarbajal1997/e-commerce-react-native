@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { View, TouchableOpacity, StyleSheet } from "react-native"
 import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons"
 import { useSelector, useDispatch } from "react-redux"
@@ -8,18 +8,30 @@ import { addFav } from "../store/actions/fav.action"
 const ButtonsHeaderDetails = ({ route }) => {
     const dispatch = useDispatch();
     const { id } = route.params;
+    // chequeo si ya existe en guardados el producto para marcar con color el icono
     const favs = useSelector(state => state.favs.productsFavs);
-    const products = useSelector(state => state.products.products);
-    const selectItem = products.find(item => item.id === parseInt(id));
-    const existFav = favs.find(item => item.id === selectItem.id);
-    const productData = {
-        id:selectItem.id,
-        image:selectItem.images[0],
-        quantity:1,
-        title:selectItem.title,
-        price: selectItem.price
-    }
+    const existFav = favs.find(item => item.id === parseInt(id));
 
+    
+    // filtro por id el producto, para luego poder pasar los datos como objeto al carrito
+    // const products = useSelector(state => state.products.products);
+    
+    const products = useSelector(state => state.products.products);
+    let productData;
+
+    if(products.length > 0){
+        const selectItem = products.find(item => item.id === parseInt(id));
+        productData = {
+            id:selectItem.id,
+            image:selectItem.images[0],
+            quantity:1,
+            title:selectItem.title,
+            price: selectItem.price
+        }
+    }
+        
+
+    
 
     return (
         <View style={styles.container}>
