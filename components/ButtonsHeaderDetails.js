@@ -38,10 +38,10 @@ const ButtonsHeaderDetails = ({ route }) => {
             <TouchableOpacity
                 style={styles.button}
                 onPress={()=> dispatch(addToCart(productData))}
-                activeOpacity={0.8}
+                
             >
                 
-                <MaterialCommunityIcons name="cart-plus" size={30} color="#460099" />
+                <MaterialCommunityIcons name="cart-plus" size={30} color="#d93175" />
             </TouchableOpacity>
             <TouchableOpacity
                 style={styles.button}
@@ -49,8 +49,8 @@ const ButtonsHeaderDetails = ({ route }) => {
                 
             >
                 { existFav 
-                    ? <MaterialIcons name="bookmark" size={30} color="#460099" />
-                    :<MaterialIcons name="bookmark-border" size={30} color="#460099" />
+                    ? <MaterialIcons name="bookmark" size={30} color="#d93175" />
+                    :<MaterialIcons name="bookmark-border" size={30} color="#d93175" />
                 }
                      
             </TouchableOpacity>

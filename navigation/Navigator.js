@@ -18,16 +18,26 @@ import ButtonsHeaderDetails from "../components/ButtonsHeaderDetails";
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
     return(
-        <HomeStack.Navigator>
+        <HomeStack.Navigator
+            screenOptions={{
+                headerTitleStyle:{
+                    fontFamily:'poppins-semi-bold',
+                    
+                },
+                headerTintColor:"#d93175",
+                headerStyle:{
+                    borderBottomColor:"#d93175",
+                    borderBottomWidth:2,
+                    
+                }
+                
+            }}
+        >
             <HomeStack.Screen 
             name="Home" 
             component={HomeScreen}
             options={{
-                title:"Inicio",
-                headerTitleStyle:{
-                    fontFamily:'poppins-semi-bold',
-                    
-                }
+                title:"Tech Market",
             }}/>
             { STACK_PAGES.map(item => (
                 <HomeStack.Screen
@@ -36,10 +46,6 @@ const HomeStackScreen = () => {
                     component={item.component}
                     options={{
                         title:item.title,
-                        headerTitleStyle:{
-                            fontFamily:'poppins-semi-bold',
-                            
-                        }
                     }}
                 />
             )) }
@@ -48,10 +54,6 @@ const HomeStackScreen = () => {
                 component={Details} 
                 options={({ navigation, route }) => ({
                     title:"Detalles",
-                    headerTitleStyle:{
-                        fontFamily:'poppins-semi-bold',
-                        
-                    },
                     headerRight: () => (
                         <ButtonsHeaderDetails route={route}/>
                     )
@@ -67,27 +69,30 @@ const HomeStackScreen = () => {
 const SearchStack = createStackNavigator();
 const SearchStackScreen = () => {
     return(
-        <SearchStack.Navigator>
+        <SearchStack.Navigator
+            screenOptions={{
+                headerTitleStyle:{
+                    fontFamily:'poppins-semi-bold',
+                },
+                headerTintColor:"#d93175",
+                headerStyle:{
+                    borderBottomColor:"#d93175",
+                    borderBottomWidth:2,
+                    
+                }
+            }}
+        >
+                    
             <SearchStack.Screen
                 name="Search"
                 component={SearchProducts}
-                options={{
-                    title:"Búsqueda",
-                    headerTitleStyle:{
-                        fontFamily:'poppins-semi-bold',
-                        
-                    }
-                }}
+                options={{ title:"Búsqueda" }}
             />
             <SearchStack.Screen 
                 name="details" 
                 component={Details} 
                 options={({ navigation, route }) => ({
                     title:"Detalles",
-                    headerTitleStyle:{
-                        fontFamily:'poppins-semi-bold',
-                        
-                    },
                     headerRight: () => (
                         <ButtonsHeaderDetails route={route}/>
                     )
@@ -103,31 +108,37 @@ const SearchStackScreen = () => {
 const CartStack = createStackNavigator();
 const CartStackScreen = () => {
     return(
-        <CartStack.Navigator>
+        <CartStack.Navigator
+            screenOptions={{
+                headerTitleStyle:{
+                    fontFamily:'poppins-semi-bold',
+                },
+                headerTintColor:"#d93175",
+                headerStyle:{
+                    borderBottomColor:"#d93175",
+                    borderBottomWidth:2,
+                    
+                }
+                    
+            }}
+        >
             <CartStack.Screen 
             name="Cart" 
             component={CartScreen}
             options={{
-                title:"Mi carrito",
-                headerTitleStyle:{
-                    fontFamily:'poppins-semi-bold',
-                    
-                }
+                title:"Mi carrito"
             }}/>
             <CartStack.Screen 
                 name="details" 
                 component={Details} 
                 options={({ navigation, route }) => ({
                     title:"Detalles",
-                    headerTitleStyle:{
-                        fontFamily:'poppins-semi-bold',
-                        
-                    },
                     headerRight: () => (
                         <ButtonsHeaderDetails route={route}/>
                     )
                 })}
             />
+                
         </CartStack.Navigator>
     )
 }
@@ -136,26 +147,32 @@ const CartStackScreen = () => {
 const FavStack = createStackNavigator();
 const FavStackScreen = () => {
     return(
-        <FavStack.Navigator>
+        <FavStack.Navigator
+            screenOptions={{
+                headerTitleStyle:{
+                    fontFamily:'poppins-semi-bold',
+                },
+                headerTintColor:"#d93175",
+                headerStyle:{
+                    borderBottomColor:"#d93175",
+                    borderBottomWidth:2,
+                    
+                }
+            }}
+        >
+                    
             <FavStack.Screen 
             name="Fav" 
             component={FavScreen}
             options={{
                 title:"Guardados",
-                headerTitleStyle:{
-                    fontFamily:'poppins-semi-bold',
-                    
-                }
+                
             }}/>
             <FavStack.Screen 
                 name="details" 
                 component={Details} 
                 options={({ navigation, route }) => ({
                     title:"Detalles",
-                    headerTitleStyle:{
-                        fontFamily:'poppins-semi-bold',
-                        
-                    },
                     headerRight: () => (
                         <ButtonsHeaderDetails route={route}/>
                     )
@@ -169,16 +186,25 @@ const FavStackScreen = () => {
 const SettingsStack = createStackNavigator();
 const SettingsStackScreen = () => {
     return(
-        <SettingsStack.Navigator>
+        <SettingsStack.Navigator
+            screenOptions={{
+                headerTitleStyle:{
+                    fontFamily:'poppins-semi-bold',
+                },
+                headerTintColor:"#d93175",
+                headerStyle:{
+                    borderBottomColor:"#d93175",
+                    borderBottomWidth:2,
+                    
+                }
+            }}
+        >
+                    
             <SettingsStack.Screen 
             name="Setings" 
             component={SettingsScreen}
             options={{
                 title:"Configuración",
-                headerTitleStyle:{
-                    fontFamily:'poppins-semi-bold',
-                    
-                }
             }}/>
             
         </SettingsStack.Navigator>
@@ -188,7 +214,7 @@ const SettingsStackScreen = () => {
 const AuthStack = createStackNavigator();
 export const AuthStackScreen = () => {
     return (
-        // <NavigationContainer>
+        
             <AuthStack.Navigator>
                 <AuthStack.Screen 
                 name="Auth" 
@@ -206,7 +232,7 @@ export const AuthStackScreen = () => {
                 }}
                 />
             </AuthStack.Navigator>
-        // </NavigationContainer>
+        
 
     )
 }
@@ -216,7 +242,7 @@ export const AuthStackScreen = () => {
 const Tab = createBottomTabNavigator();
 export const Navigator = () => {
     return(
-        // <NavigationContainer>
+        
             <Tab.Navigator 
             initialRouteName="Home"
             screenOptions={({ route }) => ({
@@ -233,26 +259,26 @@ export const Navigator = () => {
                     iconName = focused ? 'shoppingcart' : 'shoppingcart';
                   }else if (route.name === 'Guardados') {
                     iconName = focused ? 'hearto' : 'hearto';
-                  }else if (route.name === 'Configuracion') {
-                    iconName = focused ? 'setting' : 'setting';
+                  }else if (route.name === 'Usuario') {
+                    iconName = focused ? 'user' : 'user';
                   }
       
                   
-                  return <AntDesign name={iconName} size={size} color={color} />;
+                  return <AntDesign name={iconName} size={size} color={focused ?"#d93175":"#252151"} />;
                 },
               })}
             tabBarOptions={{
-                activeTintColor:"tomato",
-                inactiveTintColor:"gray"
+                activeTintColor:"#d93175",
+                inactiveTintColor:"#252151"
             }}
             >
                 <Tab.Screen name="Inicio" component={HomeStackScreen}/>
                 <Tab.Screen name="Búsqueda" component={SearchStackScreen}/>
                 <Tab.Screen name="Carrito" component={CartStackScreen}/>
                 <Tab.Screen name="Guardados" component={FavStackScreen}/>
-                <Tab.Screen name="Configuracion" component={SettingsStackScreen}/>
+                <Tab.Screen name="Usuario" component={SettingsStackScreen}/>
             </Tab.Navigator>
-        // </NavigationContainer>
+        
     )
 }
 
