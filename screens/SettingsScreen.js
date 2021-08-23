@@ -1,16 +1,26 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native"
-
-const SettingsScreen = () => {
+import DataUserButton from "../components/DataUserButton";
+import LogOutButton from "../components/LogOutButton";
+import { useSelector } from "react-redux";
+const SettingsScreen = ({ navigation }) => {
+    
     return (
-        <View>
-            <Text style={styles.text}>Settings</Text>
+        <View style={styles.container}>
+            
+            <DataUserButton navigation={navigation}/>
+            <LogOutButton navigation={navigation}/>
+
         </View>
     )
 }
 
 export default SettingsScreen
 const styles = StyleSheet.create({
+    container:{
+        backgroundColor:"white",
+        flex:1
+    },
     text:{
         fontFamily:'poppins-regular'
     }

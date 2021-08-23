@@ -2,6 +2,7 @@ import { URL_LOGIN, URL_SIGNUP } from "../../constants/url"
 
 export const SIGNUP = 'SIGNUP';
 export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';
 
 
 const errorMessages = {
@@ -63,5 +64,9 @@ export const login = (email, password) => {
 
     }
 }
+
+export const logout = () => ({
+    type:LOGOUT
+})
 
 

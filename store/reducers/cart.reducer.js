@@ -8,6 +8,7 @@ const CartReducer = (state=INITIAL_STATE, action) => {
     switch (action.type) {
         case ADD_CART:
             const existId = state.productsCart.find(item => item.id === action.payload.id);
+            
             if(existId){
                 existId.quantity += 1;
                 let filterState = state.productsCart.filter(item => item.id !== existId.id);

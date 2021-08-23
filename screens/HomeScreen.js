@@ -1,15 +1,18 @@
 import React,{ useEffect } from "react";
-import { ScrollView, Text, StyleSheet, TouchableOpacity } from "react-native"
+import { ScrollView, StyleSheet } from "react-native"
 import { useDispatch, useSelector } from "react-redux";
 import OptionsSection from "../components/OptionsSection";
+import { getDataUser } from "../store/actions/dataUser.action";
 import { getProducts } from "../store/actions/products.action";
 
 const HomeScreen = ({ navigation }) => {
-    const dispatch = useDispatch();
+    // const userId = useSelector(state => state.auth.user)
+    // const dispatch = useDispatch();
     const listProducts = useSelector(state => state.products.products)
-    useEffect(() => {
-        dispatch(getProducts())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(getProducts())
+    //     dispatch(getDataUser(userId))
+    // }, [dispatch])
     
     const ids = listProducts.map(item => item.id);
     console.log(ids);

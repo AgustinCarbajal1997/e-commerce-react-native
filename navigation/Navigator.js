@@ -1,7 +1,4 @@
-import React from "react";
-import { Button, TouchableOpacity, Text, View } from "react-native";
-import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
-import { NavigationContainer } from "@react-navigation/native";
+import React, { useEffect } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { AntDesign } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -14,11 +11,17 @@ import Details from "../pages/home/Details";
 import SearchProducts from "../screens/SearchProducts";
 import AuthScreen from "../screens/AuthScreen";
 import ButtonsHeaderDetails from "../components/ButtonsHeaderDetails";
+import DataUsers from "../pages/users/DataUsers";
+import { useDispatch, useSelector } from "react-redux";
+import { getDataUser } from "../store/actions/dataUser.action";
+import { getProducts } from "../store/actions/products.action";
+
 
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
     return(
         <HomeStack.Navigator
+        initialRouteName="Home"
             screenOptions={{
                 headerTitleStyle:{
                     fontFamily:'poppins-semi-bold',
@@ -204,7 +207,13 @@ const SettingsStackScreen = () => {
             name="Setings" 
             component={SettingsScreen}
             options={{
-                title:"Configuración",
+                title:"Usuario",
+            }}/>
+            <SettingsStack.Screen 
+            name="dataUsers" 
+            component={DataUsers}
+            options={{
+                title:"Datos de usuario",
             }}/>
             
         </SettingsStack.Navigator>
@@ -241,10 +250,18 @@ export const AuthStackScreen = () => {
 
 const Tab = createBottomTabNavigator();
 export const Navigator = () => {
+    const userId = useSelector(state => state.auth.user) 
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getProducts())
+        dispatch(getDataUser(userId))
+    }, [dispatch])
+
+
     return(
         
             <Tab.Navigator 
-            initialRouteName="Home"
+            initialRouteName="Inicio"
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {
                   let iconName;

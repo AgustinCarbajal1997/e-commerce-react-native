@@ -7,19 +7,21 @@ import FavsReducer from "./reducers/fav.reducer";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2";
 import { persistReducer, persistStore } from "redux-persist"
+import DataUserReducer from "./reducers/dataUser.reducer";
 
 const persistConfig = {
     key:'root',
     storage: AsyncStorage,
     stateReconciler: autoMergeLevel2,
-    
+    blacklist:['dataUser']
 }
 
 const RootReducer = combineReducers({
     products:ProductsReducer,
     auth:AuthReducer,
     cart:CartReducer,
-    favs:FavsReducer
+    favs:FavsReducer,
+    dataUser:DataUserReducer
 })
 
 

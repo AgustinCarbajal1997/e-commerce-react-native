@@ -8,7 +8,6 @@ export const getProducts = () => {
         try {
             const response = await fetch(URL_PRODUCTS);
             const data = await response.json();
-            // console.log(data);
 
             dispatch({ type: GET_PRODUCTS, payload: data })
 

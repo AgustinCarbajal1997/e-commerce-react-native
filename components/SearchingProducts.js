@@ -77,10 +77,11 @@ const styles = StyleSheet.create({
     },
     textInput:{
         height:40,
-        borderWidth:2,
         margin:12,
         textAlign:"center",
-        fontFamily:"poppins-regular"
+        fontFamily:"poppins-regular",
+        backgroundColor:"#f5f5f5",
+        borderRadius:10
     },
     containerProductItem:{
         flexDirection:"row",
