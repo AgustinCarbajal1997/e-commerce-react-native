@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from "react
 import { useSelector, useDispatch } from "react-redux";
 import { AntDesign } from "@expo/vector-icons";
 import { addQuantity, deleteQuantity } from "../store/actions/cart.action";
+import BuyCartButton from "../components/BuyCartButton";
 const CartScreen = ({ navigation }) => {
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cart.productsCart);
@@ -27,14 +28,14 @@ const CartScreen = ({ navigation }) => {
                                 onPress={() => dispatch(addQuantity(item.id))}
                                 activeOpacity={0.8}
                             >
-                                <AntDesign name="pluscircleo" size={24} color="black" />
+                                <AntDesign name="pluscircleo" size={24} color="#353535" />
                             </TouchableOpacity>
                             <Text style={styles.quantityText}>{item.quantity}</Text>
                             <TouchableOpacity
                                 onPress={()=> dispatch(deleteQuantity(item.id))}
                                 activeOpacity={0.8}
                             >
-                                <AntDesign name="minuscircleo" size={24} color="black" />
+                                <AntDesign name="minuscircleo" size={24} color="#353535" />
                             </TouchableOpacity>
                         </View>
                         <Text style={styles.price}>$ {item.price}</Text>
@@ -52,9 +53,17 @@ const CartScreen = ({ navigation }) => {
                 renderItem={renderItem}
                 keyExtractor={item => item.id.toString()}
                 ListFooterComponent={
-                    <View>
-                        <Text>El total es: {total}</Text>
-                    </View>
+                    
+                        cart.length > 0 
+                        ? (<View style={styles.totalContainer}>
+                            <Text style={styles.total}>Total compra: $ {total}</Text>
+                            <BuyCartButton total={total.toString()}/>
+                            </View>)
+                        
+                        : (<View style={styles.totalContainer}>
+                            <Text style={styles.total}> No hay productos</Text>
+                            </View>)
+                    
                 }
             />
         </View>
@@ -95,7 +104,8 @@ const styles = StyleSheet.create({
     },
     title:{
         fontFamily:"poppins-regular",
-        paddingBottom:10
+        paddingBottom:10,
+        color:"#353535"
     },
     containerQuantityPrice:{
         flexDirection:"row",
@@ -108,10 +118,21 @@ const styles = StyleSheet.create({
     quantityText:{
         paddingLeft:10,
         paddingRight:10,
-        fontFamily:"poppins-regular"
+        fontFamily:"poppins-regular",
+        color:"#353535"
     },
     price:{
-        fontFamily:"poppins-semi-bold"
+        fontFamily:"poppins-semi-bold",
+        color:"#353535"
+    },
+    totalContainer:{
+        margin:20
+    },
+    total:{
+        color:"#353535",
+        fontFamily:"poppins-regular",
+        fontSize:20,
+        textAlign:"center"
     }
 
 

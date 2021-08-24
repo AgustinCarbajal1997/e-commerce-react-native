@@ -16,6 +16,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getDataUser } from "../store/actions/dataUser.action";
 import { getProducts } from "../store/actions/products.action";
 import History from "../pages/users/History";
+import MyShopping from "../pages/users/MyShopping";
 
 
 const HomeStack = createStackNavigator();
@@ -218,6 +219,12 @@ const SettingsStackScreen = () => {
                 component={History}
                 options={{
                     title:"Historial",
+            }}/>
+            <SettingsStack.Screen
+                name="myShopping" 
+                component={MyShopping}
+                options={{
+                    title:"Mis compras",
             }}/>
             <SettingsStack.Screen 
                 name="details" 

@@ -1,4 +1,4 @@
-import { ADD_CART, ADD_QUANTITY, DELETE_QUANTITY } from "../actions/cart.action";
+import { ADD_CART, ADD_QUANTITY, BUY_PRODUCTS, DELETE_QUANTITY } from "../actions/cart.action";
 
 export const INITIAL_STATE = {
     productsCart:[]
@@ -52,9 +52,12 @@ const CartReducer = (state=INITIAL_STATE, action) => {
                     productsCart:filterState
                 }
             }
-            
-
-
+        
+        case BUY_PRODUCTS:
+            return {
+                ...state,
+                productsCart:[]
+            }
 
     
         default:

@@ -8,6 +8,11 @@ const SettingsScreen = ({ navigation }) => {
         <View style={styles.container}>
             <DataUserButton 
                 navigation={navigation}
+                navigate="myShopping"
+                text="Mis compras"
+            />
+            <DataUserButton 
+                navigation={navigation}
                 navigate="history"
                 text="Historial"
             />
