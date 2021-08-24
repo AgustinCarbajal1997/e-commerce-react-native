@@ -7,6 +7,17 @@ import { Provider } from 'react-redux';
 import { persistor, store } from './store';
 import { PersistGate } from 'redux-persist/lib/integration/react';
 
+import { init } from './db';
+
+init()
+  .then(() => console.log('Database initialized'))
+  .catch((err) => {
+    console.log('Database failed to connect');
+    console.log(err.message)
+});
+
+
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     'poppins-regular': require('./assets/fonts/Poppins-Regular.ttf'),

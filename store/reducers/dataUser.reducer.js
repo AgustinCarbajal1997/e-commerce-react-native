@@ -8,10 +8,9 @@ const INITIAL_STATE = {}
 const DataUserReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case GET_DATA_USER:
-            console.log("este es userId",action.userId);
-            console.log("este es action payload", action.payload)
+            
             const filterUser = action.payload.find(item => item.userId === action.userId);
-            console.log("Datos filtrados", filterUser)
+            
             if(!filterUser) return state;
             return {
                 ...state,

@@ -41,7 +41,7 @@ const ButtonsHeaderDetails = ({ route }) => {
                 
             >
                 
-                <MaterialCommunityIcons name="cart-plus" size={30} color="#d93175" />
+                <MaterialCommunityIcons name="cart-plus" size={30} color="#f6bb93" />
             </TouchableOpacity>
             <TouchableOpacity
                 style={styles.button}
@@ -49,8 +49,8 @@ const ButtonsHeaderDetails = ({ route }) => {
                 
             >
                 { existFav 
-                    ? <MaterialIcons name="bookmark" size={30} color="#d93175" />
-                    :<MaterialIcons name="bookmark-border" size={30} color="#d93175" />
+                    ? <MaterialIcons name="bookmark" size={30} color="#f6bb93" />
+                    :<MaterialIcons name="bookmark-border" size={30} color="#f6bb93" />
                 }
                      
             </TouchableOpacity>

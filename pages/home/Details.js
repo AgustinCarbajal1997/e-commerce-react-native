@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ScrollView, View, Text, FlatList, StyleSheet, Image} from 'react-native';
 import { useSelector } from 'react-redux';
 import { List } from 'react-native-paper';
+import { insertHistory } from '../../db';
 
 const Details = ({ route }) => {
     const { id } = route.params;
     const products = useSelector(state => state.products.products);
     const selectedProduct = products.find(item => item.id === parseInt(id));
+
+    useEffect(() => {
+        (async()=>{
+            try {
+                const date = new Date()
+                const localDate = date.toLocaleDateString();
+                const result = await insertHistory(selectedProduct.id.toString(),selectedProduct.title,localDate);
+                
+            } catch (error) {
+                console.log(error)    
+            }
+        })()
+    }, [])
+        
+
+
 
     const renderItem = ({ item }) => (
         <View>

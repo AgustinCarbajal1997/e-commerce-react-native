@@ -15,6 +15,7 @@ import DataUsers from "../pages/users/DataUsers";
 import { useDispatch, useSelector } from "react-redux";
 import { getDataUser } from "../store/actions/dataUser.action";
 import { getProducts } from "../store/actions/products.action";
+import History from "../pages/users/History";
 
 
 const HomeStack = createStackNavigator();
@@ -27,10 +28,11 @@ const HomeStackScreen = () => {
                     fontFamily:'poppins-semi-bold',
                     
                 },
-                headerTintColor:"#d93175",
+                headerTintColor:"#f6bb93",
                 headerStyle:{
-                    borderBottomColor:"#d93175",
-                    borderBottomWidth:2,
+                    // borderBottomColor:"#d93175",
+                    // borderBottomWidth:2,
+                    backgroundColor:"#651B40"
                     
                 }
                 
@@ -77,10 +79,9 @@ const SearchStackScreen = () => {
                 headerTitleStyle:{
                     fontFamily:'poppins-semi-bold',
                 },
-                headerTintColor:"#d93175",
+                headerTintColor:"#f6bb93",
                 headerStyle:{
-                    borderBottomColor:"#d93175",
-                    borderBottomWidth:2,
+                    backgroundColor:"#651B40"
                     
                 }
             }}
@@ -116,10 +117,9 @@ const CartStackScreen = () => {
                 headerTitleStyle:{
                     fontFamily:'poppins-semi-bold',
                 },
-                headerTintColor:"#d93175",
+                headerTintColor:"#f6bb93",
                 headerStyle:{
-                    borderBottomColor:"#d93175",
-                    borderBottomWidth:2,
+                    backgroundColor:"#651B40"
                     
                 }
                     
@@ -155,10 +155,9 @@ const FavStackScreen = () => {
                 headerTitleStyle:{
                     fontFamily:'poppins-semi-bold',
                 },
-                headerTintColor:"#d93175",
+                headerTintColor:"#f6bb93",
                 headerStyle:{
-                    borderBottomColor:"#d93175",
-                    borderBottomWidth:2,
+                    backgroundColor:"#651B40"
                     
                 }
             }}
@@ -194,10 +193,9 @@ const SettingsStackScreen = () => {
                 headerTitleStyle:{
                     fontFamily:'poppins-semi-bold',
                 },
-                headerTintColor:"#d93175",
+                headerTintColor:"#f6bb93",
                 headerStyle:{
-                    borderBottomColor:"#d93175",
-                    borderBottomWidth:2,
+                    backgroundColor:"#651B40"
                     
                 }
             }}
@@ -215,7 +213,22 @@ const SettingsStackScreen = () => {
             options={{
                 title:"Datos de usuario",
             }}/>
-            
+            <SettingsStack.Screen
+                name="history" 
+                component={History}
+                options={{
+                    title:"Historial",
+            }}/>
+            <SettingsStack.Screen 
+                name="details" 
+                component={Details} 
+                options={({ navigation, route }) => ({
+                    title:"Detalles",
+                    headerRight: () => (
+                        <ButtonsHeaderDetails route={route}/>
+                    )
+                })}
+            />
         </SettingsStack.Navigator>
     )
 }
@@ -281,12 +294,12 @@ export const Navigator = () => {
                   }
       
                   
-                  return <AntDesign name={iconName} size={size} color={focused ?"#d93175":"#252151"} />;
+                  return <AntDesign name={iconName} size={size} color={focused ?"#b83253":"#fc666f"} />;
                 },
               })}
             tabBarOptions={{
-                activeTintColor:"#d93175",
-                inactiveTintColor:"#252151"
+                activeTintColor:"#b83253",
+                inactiveTintColor:"#fc666f"
             }}
             >
                 <Tab.Screen name="Inicio" component={HomeStackScreen}/>

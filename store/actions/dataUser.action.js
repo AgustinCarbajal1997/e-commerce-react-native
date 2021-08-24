@@ -15,7 +15,7 @@ export const getDataUser = (userId) => {
         try {
             const response = await fetch(URL_DATA_USERS);
             const data = await response.json();
-            console.log(data);
+            
 
             const arrayItems = createArray(data);
 

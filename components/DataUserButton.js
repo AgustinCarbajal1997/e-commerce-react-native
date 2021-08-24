@@ -2,15 +2,15 @@ import React from "react"
 import { Text, TouchableOpacity, StyleSheet } from "react-native"
 
 
-const DataUserButton = ({ navigation }) => {
+const DataUserButton = ({ navigation, navigate, text }) => {
     
 
     return (
         <TouchableOpacity 
             style={styles.touchable}
-            onPress={()=> navigation.navigate("dataUsers")}
+            onPress={()=> navigation.navigate(`${navigate}`)}
         >
-            <Text style={styles.text}>Datos del usuario</Text>
+            <Text style={styles.text}>{`${text}`}</Text>
         </TouchableOpacity>
     )
 }

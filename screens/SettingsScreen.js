@@ -2,13 +2,20 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native"
 import DataUserButton from "../components/DataUserButton";
 import LogOutButton from "../components/LogOutButton";
-import { useSelector } from "react-redux";
 const SettingsScreen = ({ navigation }) => {
     
     return (
         <View style={styles.container}>
-            
-            <DataUserButton navigation={navigation}/>
+            <DataUserButton 
+                navigation={navigation}
+                navigate="history"
+                text="Historial"
+            />
+            <DataUserButton 
+                navigation={navigation} 
+                navigate="dataUsers" 
+                text="Datos del usuario"
+            />
             <LogOutButton navigation={navigation}/>
 
         </View>
