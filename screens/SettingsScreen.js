@@ -31,7 +31,9 @@ export default SettingsScreen
 const styles = StyleSheet.create({
     container:{
         backgroundColor:"white",
-        flex:1
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center"
     },
     text:{
         fontFamily:'poppins-regular'

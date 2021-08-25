@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
     label:{
         fontFamily:"poppins-semi-bold",
         fontSize:20,
-        color:"#252151",
+        color:"#353535",
         marginTop:20
     },
     text:{
         fontFamily:"poppins-regular",
         fontSize:15,
-        color:"#252151",
+        color:"#353535",
         
     }
 })

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from "react-native"
 import { fetchHistory } from "../../db"
 
+// hago la consulta asincrona a la base de datos y corroboro si hay elementos en el historial
 
 const History = ({ navigation }) => {
     const [historyProducts, setHistoryProducts] = useState([])
@@ -59,12 +60,12 @@ const styles = StyleSheet.create({
     name:{
         width:"70%",
         fontFamily:"poppins-regular",
-        color:"#252151"
+        color:"#353535"
     },
     date:{
         width:"30%",
         fontFamily:"poppins-regular",
         textAlign:"right",
-        color:"#252151"
+        color:"#353535"
     }
 })

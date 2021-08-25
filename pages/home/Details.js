@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
-import { ScrollView, View, Text, FlatList, StyleSheet, Image} from 'react-native';
+import { ScrollView, View, Text, FlatList, StyleSheet, Image, Dimensions} from 'react-native';
 import { useSelector } from 'react-redux';
 import { List } from 'react-native-paper';
 import { insertHistory } from '../../db';
+
+//cada producto de la lista es un boton que redirige a la pestaña details, esta pestaña recibe un route params con el id del producto, a partir de ese id, se filtra el producto desde la lista que viene del state global de redux con los productos. Por otro lado, cada vez que se inicializa el componente details (es decir se ingresa a la pagina), se activa un useeffect de dependencia de array vacio que llama a inserhistory y crea un historial de registros en la base de datos sqlite. 
 
 const Details = ({ route }) => {
     const { id } = route.params;
     const products = useSelector(state => state.products.products);
     const selectedProduct = products.find(item => item.id === parseInt(id));
 
+    // useeffect inserta en el historial
     useEffect(() => {
         (async()=>{
             try {
@@ -22,7 +25,7 @@ const Details = ({ route }) => {
         })()
     }, [])
         
-
+    console.log(Dimensions.get('window').width)
 
 
     const renderItem = ({ item }) => (
@@ -35,7 +38,7 @@ const Details = ({ route }) => {
             />
         </View>
     )
-
+    
     const IMAGES_CAROUSEL = selectedProduct.images.map(item => item);
     const SPECIFICATIONS_ACC = selectedProduct.especifications.map(item => item);
 
@@ -117,21 +120,26 @@ const styles = StyleSheet.create({
         
     },
     images:{
-        width:300,
-        height:300
+        // obtengo dimension de pantalla para que ocupe todo el ancho y resto padding
+        width:(Dimensions.get('window').width)-30,
+        height:(Dimensions.get('window').width)-30
     },
     mainTitle:{
         fontFamily:'poppins-semi-bold',
-        fontSize:17
+        fontSize:17,
+        color:"#353535",
+        marginTop:20
     },
     price:{
         fontFamily:'poppins-regular',
         fontSize:25,
         marginTop:25,
+        color:"#353535"
     },
     specificationsItemsContainer:{
         marginTop:25,
         marginBottom:25,
+        
     },
     accordion:{
         backgroundColor:"#ffffff"

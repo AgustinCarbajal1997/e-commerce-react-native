@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         
-        backgroundColor:"#d93175"
+        backgroundColor:"#651b40"
     },
     image:{
         flex: 1,
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
         flexDirection:"row"
     },
     buttonAuth:{
-        backgroundColor:"#46019a",
+        backgroundColor:"#c0424e",
         width:"40%",
         justifyContent:"center",
         alignItems:"center",
