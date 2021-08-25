@@ -42,9 +42,7 @@ export const Navigator = () => {
     if(!location) return;
     (async()=>{
         try {
-            const location = await Location.getCurrentPositionAsync({
-                timeout:5000,
-              });
+            const location = await Location.getLastKnownPositionAsync({})
               
               setPickedLocation({
                 lat:location.coords.latitude,
@@ -68,7 +66,7 @@ export const Navigator = () => {
         if(pickedLocation) dispatch(getLogation(pickedLocation))
     }, [pickedLocation, dispatch])
 
-    console.log(pickedLocation)
+    
     
     useEffect(() => {
         dispatch(getProducts())
