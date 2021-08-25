@@ -10,13 +10,15 @@ import { persistReducer, persistStore } from "redux-persist"
 import DataUserReducer from "./reducers/dataUser.reducer";
 import UserLocation from "./reducers/location.reducer";
 
+// redux persist config
 const persistConfig = {
     key:'root',
     storage: AsyncStorage,
     stateReconciler: autoMergeLevel2,
-    blacklist:['dataUser']
+    blacklist:['dataUser','location']
 }
 
+// combine reducers
 const RootReducer = combineReducers({
     products:ProductsReducer,
     auth:AuthReducer,
