@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, Alert, TextInput} from 'react-native'
 import Input from '../components/Input'
 import imageBg from '../assets/backgroud-image-sign-up.jpg'
 import { useDispatch } from 'react-redux'
@@ -48,9 +48,16 @@ const AuthScreen = () => {
 
 
     const onSignUpHandler = () => {
-        console.log("Se ejecuta")
-        if(!isEmailValid || !isPassValid) return;
-        console.log("Se sigue ejecuta")
+        
+        if(!isEmailValid.isValid || !isPassValid.isValid){
+            Alert.alert(
+                'No ha completado sus datos',
+                'Por favor introduzca correo y contraseña',
+                [{text:'Ok'}]
+              );
+              return;
+        }
+        
         try {
             dispatch(signup(input.user,input.pass))
         } catch (error) {
@@ -59,9 +66,16 @@ const AuthScreen = () => {
     }
 
     const onLogInHandler = () => {
-        console.log("Se ejecuta");
-        if(!isEmailValid || !isPassValid) return;
-        console.log("Se sigue ejecutando");
+        
+        if(!isEmailValid.isValid || !isPassValid.isValid){
+            Alert.alert(
+                'No ha completado sus datos',
+                'Por favor introduzca correo y contraseña',
+                [{text:'Ok'}]
+              );
+              return;
+        }
+        
         try {
             dispatch(login(input.user,input.pass))
         } catch (error) {
@@ -92,7 +106,8 @@ const AuthScreen = () => {
                         label="Usuario"
                         setInput={setInput}
                         input={input}
-                        onBlur={onHandleValidationEmail}
+                        
+                        onSelectionChange={onHandleValidationEmail}
                         
                     />
                     { isEmailValid.touched && !isEmailValid.isValid && <Text style={styles.inputErrors}>Introduzca email valido</Text> }
@@ -108,7 +123,9 @@ const AuthScreen = () => {
                         secureTextEntry
                         setInput={setInput}
                         input={input}
-                        onBlur={onHandleValidationPassword}
+                        
+                        onSelectionChange={onHandleValidationPassword}
+                        
                     />
                     { isPassValid.touched && !isPassValid.isValid && <Text style={styles.inputErrors}>Mínimo 8 caracteres, mayúsculas y minúsculas</Text> }
                     
@@ -118,6 +135,7 @@ const AuthScreen = () => {
                         style={styles.buttonAuth} 
                         activeOpacity={0.8}
                         onPress={onLogInHandler}
+                        
                         >
                         <Text style={styles.buttonText}>Iniciar sesión</Text>
                     </TouchableOpacity>

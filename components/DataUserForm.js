@@ -7,7 +7,6 @@ import { postDataUser } from "../store/actions/dataUser.action";
 
 const DataUserForm = () => {
     const userId = useSelector(state => state.auth.user);
-    const datosUsuario = useSelector(state => state.dataUser)
     const dispatch = useDispatch();
     const [form, setForm] = useState({
         name:"",
@@ -23,7 +22,7 @@ const DataUserForm = () => {
         })
     }
 
-    console.log(datosUsuario)
+    
 
 
 

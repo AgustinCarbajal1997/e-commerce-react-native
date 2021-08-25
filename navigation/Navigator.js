@@ -18,57 +18,57 @@ export const Navigator = () => {
     const userId = useSelector(state => state.auth.user);
     const cartLength = useSelector(state => state.cart.productsCart);
     const dispatch = useDispatch();
-    const [location, setLocation] = useState(null);
-    const [pickedLocation, setPickedLocation] = useState(null)
+    // const [location, setLocation] = useState(null);
+    // const [pickedLocation, setPickedLocation] = useState(null)
 
     // useEffect para manejar los permisos al comienzo de la aplicación
-  useEffect(() => {
-    (async ()=> {
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if(status !== 'granted'){
-        Alert.alert(
-          'Servicio de envíos.',
-          'Necesita otorgar permisos para localizar el lugar de envio.',
-          [{ text:'Ok' }]
-        );
-        return;
-      }
-      setLocation(true)
-    })();
-  }, [])
+  // useEffect(() => {
+  //   (async ()=> {
+  //     let { status } = await Location.requestForegroundPermissionsAsync();
+  //     if(status !== 'granted'){
+  //       Alert.alert(
+  //         'Servicio de envíos.',
+  //         'Necesita otorgar permisos para localizar el lugar de envio.',
+  //         [{ text:'Ok' }]
+  //       );
+  //       return;
+  //     }
+  //     setLocation(true)
+  //   })();
+  // }, [])
 
     // si se brindaron los permisos se ejecuta el useeffect para obtener coords  
-  useEffect(() => {
-    if(!location) return;
-    (async()=>{
-        try {
-            const location = await Location.getCurrentPositionAsync({
-                timeout:5000,
-              });
+  // useEffect(() => {
+  //   if(!location) return;
+  //   (async()=>{
+  //       try {
+  //           const location = await Location.getCurrentPositionAsync({
+  //               timeout:5000,
+  //             });
               
-              setPickedLocation({
-                lat:location.coords.latitude,
-                lng:location.coords.longitude
-              }); 
-        } catch (error) {
-            Alert.alert(
-                'Ha ocurrido un error',
-                'No se pudo obtener la localización',
-                [{text:'Ok'}]
-              );
-            console.log(error)
-        }
+  //             setPickedLocation({
+  //               lat:location.coords.latitude,
+  //               lng:location.coords.longitude
+  //             }); 
+  //       } catch (error) {
+  //           Alert.alert(
+  //               'Ha ocurrido un error',
+  //               'No se pudo obtener la localización',
+  //               [{text:'Ok'}]
+  //             );
+  //           console.log(error)
+  //       }
 
 
-    })()  
-    }, [location])
+  //   })()  
+  //   }, [location])
       
-    // si picked location trae coordenadas se ejecuta el dispatch
-    useEffect(() => {
-        if(pickedLocation) dispatch(getLogation(pickedLocation))
-    }, [pickedLocation, dispatch])
+  //   // si picked location trae coordenadas se ejecuta el dispatch
+  //   useEffect(() => {
+  //       if(pickedLocation) dispatch(getLogation(pickedLocation))
+  //   }, [pickedLocation, dispatch])
 
-    console.log(pickedLocation)
+    // console.log(pickedLocation)
     
     useEffect(() => {
         dispatch(getProducts())

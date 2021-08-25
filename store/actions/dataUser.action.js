@@ -42,8 +42,8 @@ export const postDataUser = (dataUser) => {
                     userId:dataUser.userId
                 })
             })
-
-            console.log(response)
+            
+            
 
             dispatch({ type:POST_DATA_USER, payload:dataUser })
 
