@@ -8,6 +8,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2";
 import { persistReducer, persistStore } from "redux-persist"
 import DataUserReducer from "./reducers/dataUser.reducer";
+import UserLocation from "./reducers/location.reducer";
 
 const persistConfig = {
     key:'root',
@@ -21,7 +22,8 @@ const RootReducer = combineReducers({
     auth:AuthReducer,
     cart:CartReducer,
     favs:FavsReducer,
-    dataUser:DataUserReducer
+    dataUser:DataUserReducer,
+    location:UserLocation
 })
 
 

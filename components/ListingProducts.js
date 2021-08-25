@@ -1,6 +1,7 @@
 import React from "react"
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from "react-native"
 import { useSelector } from "react-redux"
+import ShippingMessage from "./ShippingMessage"
 
 const Item = ({ id, images, title, price, navigation }) => {
     const onHandlerPress = () => {
@@ -22,6 +23,7 @@ const Item = ({ id, images, title, price, navigation }) => {
             </View>
             <View style={styles.containerProductaData}>
                 <Text style={styles.containerProductaDataTitle}>{title}</Text>
+                <ShippingMessage/>
                 <Text style={styles.containerProductaDataPrice}>$ {price}</Text>
             </View>
         </View>
@@ -86,10 +88,11 @@ const styles = StyleSheet.create({
         alignItems:"flex-start"
     },
     containerProductaDataTitle:{
-        fontFamily:'poppins-regular'
+        fontFamily:'poppins-regular',
+        color:"#353535"
     },
     containerProductaDataPrice:{
         fontFamily:'poppins-semi-bold',
-        
+        color:"#353535"
     }
 })
